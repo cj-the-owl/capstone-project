@@ -55,7 +55,10 @@ class User {
     login(req, res) {
         const {emailAdd, userPass} = req.body
         const strQry = 
-        `SELECT firstName, lastName, userAge, gender, userRole, emailAdd, userPass, userProfile FROM Users WHERE emailAdd = '${emailAdd};`
+        `SELECT * 
+        FROM Users 
+        WHERE emailAdd = '${emailAdd}';
+        `
 
         db.query(strQry, async (err, data) => {
             if (err) throw err
