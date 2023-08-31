@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000
 const cors = require("cors")
 const cookieParser = require("cookie-parser")
 // const { errorHandling } = require("./middleware")
-// const route = require("./controller")
+const route = require("./controller")
 
 app.use((req, res, next) => {
     res.header("Acess-Control-Allow-Origin", "*",)
@@ -22,7 +22,7 @@ app.use(
     express.urlencoded({ extended: false })
 )
 
-// app.use(route)
+app.use(route)
 // app.use(errorHandling)
 
 app.listen(port, () => {
