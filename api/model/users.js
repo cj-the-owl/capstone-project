@@ -1,6 +1,6 @@
 const db = require("../config/db.config")
 const {hash, compare, hashSync} = require("bcrypt")
-const {createToken} = require("../middleware")
+const {createToken} = require("../middleware/authenticateUser")
 
 class User {
     fetchUsers(req, res) {
@@ -51,6 +51,68 @@ class User {
             if(err) throw err
             res.status(200).json({msg: "Record was removed"})
         })
+    }
+    login(req, res) {
+        const {emailAdd, userPass} = req.body
+        const strQry = 
+        `SELECT firstName, lastName, userAge, gender, userRole, emailAdd, userPass, userProfile FROM Users WHERE emailAdd = '${emailAdd};`
+
+        db.query(strQry, async (err, data) => {
+            if (err) throw err
+            if ((!data.length) || (data == null)) {
+                res.status(401).json({err: "Sorry, you gave the wrong email address"})
+            } else {
+                await compare(userPass, data[0].userPass, (cErr, cResult) => {
+                    if (cErr) throw cErr
+                    const jwToken = createToken (
+                        {
+                            emailAdd, userPass
+                        }
+                    )
+                    res.cookie("LegitUser", jwToken, {
+                        maxAge: 360000,
+                        httpOnly: true
+                    })
+                    if (cResult) {
+                        res.status(200).json({
+                            msg: "User is logged in", jwToken, result: data[0]
+                        })
+                    } else {
+                        res.status(401).json({
+                            err: "You have entered an invalid password or have not registered"
+                        })
+                    }
+                })
+            }
+        })
+    }
+    async register(req, res) {
+        const data = req.body;
+
+        data.userPass = await hash(data.userPass, 15);
+
+        const user = {
+            emailAdd: data.emailAdd,
+            userPass: data.userPass
+        };
+
+        const query = 
+        `INSERT INTO Users SET ?;`;
+
+        db.query(query, [data], (err) => {
+            if (err) throw err
+
+            let token = createToken(user)
+            res.cookie("LegitUser", token, {
+                maxAge: 360000,
+                httpOnly: true
+            });
+
+            res.json({
+                status: res.statusCode,
+                message: "A new user has registered"
+            });
+        });
     }
 }
 

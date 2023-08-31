@@ -5,7 +5,7 @@ class Products {
         const strQry = 
         `SELECT prodID, prodName, quantity, prodPrice, category, prodUrl FROM Products;`;
         db.query(strQry, (err, data) => {
-            if(err) throw err;
+            if(err) throw err
             res.status(200).json(data)
         });
     }
@@ -13,7 +13,7 @@ class Products {
         const strQry = 
         `SELECT prodID, prodName, quantity, prodPrice, category, prodUrl FROM Products WHERE prodID = ?;`;
         db.query(strQry, [req.params.id], (err, data) => {
-            if(err) throw err;
+            if(err) throw err
             res.status(200).json(data)
         });
     }
@@ -35,7 +35,7 @@ class Products {
         `UPDATE Products SET ? WHERE prodID = ?;`;
 
         db.query(query,  [req.body, req.params.id], (err) => {
-            if (err) throw err;
+            if (err) throw err
 
             res.json({
                 status: res.statusCode,
