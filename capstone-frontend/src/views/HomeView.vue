@@ -52,24 +52,24 @@
     </div>
     <div class="row">
       <div class="mt-3 col-lg-4">
-        <img class="best-sell-img" src="#" width="140" height="140">
+        <img class="best-sell-img" src="https://i.postimg.cc/RZRTMfMs/10-Spiritual-Reads-That-Are-Basically-Portable-Life-Coaches.jpg" width="140" height="450">
       </div>
       <div class="mt-3 col-lg-4">
-        <img class="best-sell-img" src="#" width="140" height="140">
+        <img class="best-sell-img" src="https://i.postimg.cc/pL2D1TDD/All-the-Bright-Places-Movie-Tie-In-Edition-by-Jennifer-Niven-9780593118924-Penguin-Random-House-com.jpg" width="140" height="450">
       </div>
       <div class="mt-3 col-lg-4">
-        <img class="best-sell-img" src="#" width="140" height="140">
+        <img class="best-sell-img" src="https://i.postimg.cc/dtn739yy/Glass-Houses-book-by-Rachel-Caine.jpg" width="140" height="450">
       </div>
     </div>
     <div class="row">
       <div class="mt-3 col-lg-4">
-        <img class="best-sell-img" src="#" width="140" height="140">
+        <img class="best-sell-img" src="https://i.postimg.cc/WzNNcQSf/A-book-about-a-hobby.jpg" width="140" height="450">
       </div>
       <div class="mt-3 col-lg-4">
-        <img class="best-sell-img" src="#" width="140" height="140">
+        <img class="best-sell-img" src="https://i.postimg.cc/QCwyJ7Bk/The-Subtle-Art-of-Not-Giving-a-F-ck-A-Counterintuitive-Approach-to-Living-a-Good-Life-Mark-Manson.jpg" width="140" height="450">
       </div>
       <div class="mt-3 col-lg-4">
-        <img class="best-sell-img" src="#" width="140" height="140">
+        <img class="best-sell-img" src="https://i.postimg.cc/wBjnH9dN/What-If-It-s-Us-Book-Review-The-One-with-Too-Many-Harry-Potter-References-Sophia-Ismaa.jpg" width="140" height="450">
       </div>
     </div>
   </div>
