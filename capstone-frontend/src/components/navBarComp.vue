@@ -11,7 +11,7 @@
                         <router-link class="nav-link" to="/about">About Us</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="#">Our Books</router-link>
+                        <router-link class="nav-link" to="/products">Our Books</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/contact">Contact Us</router-link>

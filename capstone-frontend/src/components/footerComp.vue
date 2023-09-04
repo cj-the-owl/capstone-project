@@ -17,7 +17,7 @@
                 <li class="fw-bold">Navigation:</li>
                 <router-link to="/"><li class="navi">Home</li></router-link> 
                 <router-link to="/about"><li class="navi">About Us</li></router-link>
-                <li class="navi">Our Books</li>
+                <router-link to="/products"><li class="navi">Our Books</li></router-link>
                 <router-link to="/contact"><li class="navi">Contact Us</li></router-link>
                 <li class="navi">Admin</li>
             </ul>

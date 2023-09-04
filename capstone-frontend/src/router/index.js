@@ -20,6 +20,11 @@ const routes = [
     name: 'contact',
     component: () => import('../views/contactView.vue')
   },
+  {
+    path: '/products',
+    name: products,
+    component: () => import('../views/productsView.vue')
+  }
 ]
 
 const router = createRouter({
