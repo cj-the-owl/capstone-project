@@ -1,5 +1,6 @@
 <template>
-    <div class="p-5 m-5" id="heading">
+    <div>
+        <div class="p-5 m-5" id="heading">
       <h1 class="text-center">Contact Us</h1>
     </div>
     <div class="row-align-items-md-stretch">
@@ -30,6 +31,7 @@
                 </form>
             </div>
         </div>
+    </div>
     </div>
 </template>
 
