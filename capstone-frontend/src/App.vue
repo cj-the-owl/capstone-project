@@ -16,6 +16,7 @@ import navBarComp from './components/navBarComp.vue';
 
 body {
   background-color: #F9F0E9;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 </style>

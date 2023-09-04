@@ -2,7 +2,7 @@
   <div>
     <div class="p-5 m-5" id="heading">
       <h1 class="text-center">About Us</h1>
-      <p class="text-center">Welcome to Bookworm.Co, your literary gateway to the world.Founded in 2023, Bookworm.Co emerged from a passion for the written word and a deep belief in the power of stories to enlighten, inspire, and transform. As a leading online bookstore, we've curated an expansive collection of titles across all genres, ensuring that every reader finds their next favorite book in our virtual aisles.</p>
+      <p class="text-center fs-5">Welcome to Bookworm.Co, your literary gateway to the world.Founded in 2023, Bookworm.Co emerged from a passion for the written word and a deep belief in the power of stories to enlighten, inspire, and transform. As a leading online bookstore, we've curated an expansive collection of titles across all genres, ensuring that every reader finds their next favorite book in our virtual aisles.</p>
     </div>
 
     <div class="something">
@@ -46,5 +46,6 @@
     background-color: #FFE280;
     width: 300px;
     height: 450px;
+    font-size: 15px;
   }
 </style>
