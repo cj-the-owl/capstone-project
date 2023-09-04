@@ -45,7 +45,7 @@
 
   <!-- best sellers -->
 
-  <div class="container marketing">
+  <div class="container-marketing">
     <div class="p-5 m-5" id="heading">
       <h1 class="text-center">Some of our best sellers</h1>
       <p class="text-center">Discover the best sellers that have captured the hearts and imaginations of readers worldwide. Dive into stories that have left a lasting impact, and find out why they've earned their top spot</p>
