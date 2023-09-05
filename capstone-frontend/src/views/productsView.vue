@@ -9,7 +9,7 @@
             <!-- <router-link :to="{name: 'product', params:{id: product.prodID}}"> -->
                 <img class="book-img" :src="product.prodUrl">
                 <h5 class="book-name">{{ product.prodName }}</h5>
-                <p class="book-price">R {{ product.prodPrice }}</p>
+                <!-- <p class="book-price">R {{ product.prodPrice }}</p> -->
                 <button class="btn" type="button">View More</button>
             <!-- </router-link> -->
         </div>
@@ -39,5 +39,33 @@
     #heading {
         border: 3px solid black;
         background-color: #FFE280;
+    }
+
+    #prods {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 50px;
+        justify-content: center;
+
+    }
+
+    .book-img {
+        height: 400px;
+        width: 300px;
+    }
+
+
+    .book-name {
+        text-align: center;
+        border: 3px solid black;
+        padding-top: 10px;
+        height: 50px;
+        background-color: #FFE280;
+    }
+
+    .btn {
+        border: 3px solid black;
+        border-radius: 0px;
+        background-color: #BEE0DF;
     }
 </style>
