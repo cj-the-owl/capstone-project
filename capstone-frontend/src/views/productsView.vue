@@ -52,12 +52,14 @@
     .book-img {
         height: 400px;
         width: 300px;
+        border: 3px solid black;
     }
 
 
     .book-name {
         text-align: center;
         border: 3px solid black;
+        border-top: 0px;
         padding-top: 10px;
         height: 50px;
         background-color: #FFE280;
