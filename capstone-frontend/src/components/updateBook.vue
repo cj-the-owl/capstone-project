@@ -10,11 +10,11 @@
                             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
                         </div>
                         <div class="modal-body">
-                            <input class="input" type="text" placeholder="Book Name" v-model="editProduct.product.prodName">
-                            <input class="input" type="text" placeholder="Quantity" v-model="editProduct.product.quantity">
-                            <input class="input" type="text" placeholder="Price" v-model="editProduct.product.prodPrice">
-                            <input class="input" type="text" placeholder="Category" v-model="editProduct.product.category">
-                            <input class="input" type="text" placeholder="Image Url" v-model="editProduct.product.prodUrl">
+                            <input class="input" type="text" placeholder="Book Name" v-model="editProduct.prodName">
+                            <input class="input" type="text" placeholder="Quantity" v-model="editProduct.quantity">
+                            <input class="input" type="text" placeholder="Price" v-model="editProduct.prodPrice">
+                            <input class="input" type="text" placeholder="Category" v-model="editProduct.category">
+                            <input class="input" type="text" placeholder="Image Url" v-model="editProduct.prodUrl">
                         </div>
                         <div class="modal-footer">
                             <button class="btn" type="button" data-bs-dismiss="modal">Close</button>
@@ -68,11 +68,14 @@
                 ...this.editProduct,
             })
             .then(() => {
-                console.log("Updated");
+                alert("Book has been updated");
             })
             .catch((err) => {
                 console.error("Error: ", err)
             });
+            setTimeout(() => {
+                location.reload()
+            }, 500)
         },
     },
 };

@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+import axios from 'axios';
 const baseUrl = "https://bookworm-co.onrender.com/";
 export default createStore({
   state: {
@@ -79,7 +80,7 @@ export default createStore({
       }
     },
     async deleteProduct(context, prodID) {
-      console.log("success");
+      alert("success");
       try {
         const { res } = await axios.delete(`${baseUrl}product/${prodID}`);
         const { msg, err} = await res.data;

@@ -45,9 +45,8 @@
         },
         methods: {
             saveProduct() {
-                this.$store.dispatch("saveProduct", this.modal.product);
+                this.$store.dispatch("saveProduct", this.model.product);
                 setTimeout(() => {
-                    console.log("Loading...");
                     location.reload();
                 }, 500);
             },
