@@ -127,7 +127,7 @@ export default createStore({
         const { res } = await axios.post(`${baseUrl}user`, payload);
         console.log('response:', res);
         alert ('User was created')
-        let {result, msg, err} = await.res.data;
+        let {result, msg, err} = await res.data;
         if (result) {
           context.commit("setUser", result);
         } else {
