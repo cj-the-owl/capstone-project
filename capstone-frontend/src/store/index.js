@@ -98,6 +98,73 @@ export default createStore({
       }
     },
 
+    async fetchUsers(context) {
+      try{
+        let users = await (await fetch(baseUrl+"users")).json()
+        if (users) {
+          context.commit ("setUsers", users)
+        } else {
+          alert("error")
+        }
+      }
+      catch(e) {
+        console.error(e)
+      }
+    },
+
+    async fetchUser(context) {
+      try {
+        const { data } = await axios.get(`${baseUrl}user/:id`);
+        context.commit("setMsg", data.results);
+      } catch(e) {
+        context.commit("setMsg", "eeeeerrrrrrooorrrrr");
+      }
+    },
+
+    async saveUser(context, payload) {
+      console.log("Success and stuff");
+      try {
+        const { res } = await axios.post(`${baseUrl}user`, payload);
+        console.log('response:', res);
+        alert ('User was created')
+        let {result, msg, err} = await.res.data;
+        if (result) {
+          context.commit("setUser", result);
+        } else {
+          context.commit("setMsg", msg);
+        }
+      } catch (e) {
+        console.error(e)
+      }
+    },
+
+    async updateUser(context, payload) {
+      try {
+        const res = await axios.put(`${baseUrl}user/${payload.userID}`, payload)
+        console.log('response:', res);
+        alert ('User was edited')
+        let { results, err } = await res.data;
+        if (result) {
+          context.commit('setuser', results[0])
+        } else {
+          context.commit('setResponse', err)
+        }
+      } catch(e) {
+        console.error(e);
+      }
+    },
+
+    async deleteUser({ commit, dispatch }, id) {
+      try {
+        await axios.delete(`${baseUrl}user/${id}`)
+        commit('setResponse', 'User was deleted');
+        alert('User was deleted')
+        dispatch('fetchUsers');
+      } catch (e) {
+        commit('setResponse', 'User did not delete')
+      }
+    }
+
   },
   modules: {
   }
