@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="addUserModal">Add</button>
+        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#addUserModal">Add</button>
         <div class="modal fade" id="addUserModal" tabindex="-1" aria-labelledBy="addUserModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -41,7 +41,7 @@
                         userRole: "",
                         emailAdd: "",
                         userPass: "",
-                        userProfie: ""
+                        userProfile: ""
                     }
                 }
             };
@@ -51,7 +51,7 @@
             saveUser() {
                 this.$store.dispatch("saveUser", this.model.user);
                 setTimeout(() => {
-                    console.llog("Loading");
+                    console.log("Loading");
                     location.reload();
                 }, 500)
             }

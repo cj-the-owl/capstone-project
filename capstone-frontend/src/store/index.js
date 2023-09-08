@@ -8,7 +8,9 @@ export default createStore({
     product: null,
     singleBook: null,
     users: null,
-    user: null,
+    user: null || JSON.parse(localStorage.getItem('user')),
+    userAuth: null,
+    token: null,
     product: null,
     msg: null
   },
@@ -23,6 +25,17 @@ export default createStore({
     },
     setSingleBook(state, product) {
       state.singleBook = product
+    },
+    setUsers: (state, users) => {
+      state.users = users
+    },
+    setUser: (state, user) => {
+      state.user = user,
+      state.userAuth = true,
+      localstorage.setItem('user', JSON.stringify(user))
+    },
+    setToken (state, token) {
+      state.token = token
     },
     setMsg: (state, msg) => {
       state.msg = msg;
@@ -130,7 +143,7 @@ export default createStore({
     async saveUser(context, payload) {
       console.log("Success and stuff");
       try {
-        const { res } = await axios.post(`${baseUrl}user`, payload);
+        const { res } = await axios.post(`${baseUrl}register`, payload);
         console.log('response:', res);
         alert ('User was created')
         let {result, msg, err} = await res.data;
@@ -168,6 +181,29 @@ export default createStore({
         dispatch('fetchUsers');
       } catch (e) {
         commit('setResponse', 'User did not delete')
+      }
+    },
+
+    async login(context, payload) {
+      try {
+        const response = await axios.post(`${baseUrl}/login`, payload);
+        console.log('Response', response);
+        alert('Hi, you have logged in successfully')
+        const {result, token, msg, err} = await response.data
+        if (result) {
+          context.commit('setUser', result)
+          context.commit('setToken', token);
+          localStorage.setItem('login_token', token);
+          localStorage.setItem('user', JSON.stringify(result));
+          context.commit('setMsg', msg);
+          setTimeout(() => {
+            router.push({name: 'product'})
+          }), 3000
+        } else {
+          context.commit('setMsg', err)
+        }
+      } catch (error) {
+        console.error(error)
       }
     }
 
