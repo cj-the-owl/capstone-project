@@ -68,7 +68,9 @@
                 <td>{{ user.emailAdd }}</td>
                 <td>{{ user.userPass }}</td>
                 <td><img :src=user.userProfile></td>
-                <td><update-user :user="user"/></td>
+                <td><update-user :user="user"/>
+                    <button class="btn" @click="deleteUser(user.userID)">Delete</button>
+                </td>
             </tr>
             <tr v-else>Just give a second...</tr>
         </tbody>
@@ -79,8 +81,8 @@
 <script>
     import addBook from '@/components/addBook.vue'
     import updateBook from '@/components/updateBook.vue'
-    import AddUser from '../components/addUser.vue';
-    import UpdateUser from '../components/updateUser.vue';
+    import AddUser from '@/components/addUser.vue';
+    import UpdateUser from '@/components/updateUser.vue';
     export default {
        components: {addBook, updateBook, AddUser, UpdateUser},
 

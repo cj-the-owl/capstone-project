@@ -5,7 +5,10 @@ export default createStore({
   state: {
     products: null,
     product: null,
+    product: null,
+    singleBook: null,
     users: null,
+    user: null,
     product: null,
     msg: null
   },
@@ -17,6 +20,9 @@ export default createStore({
     },
     setProduct: (state, product) => {
       state.product = product
+    },
+    setSingleBook(state, product) {
+      state.singleBook = product
     },
     setMsg: (state, msg) => {
       state.msg = msg;

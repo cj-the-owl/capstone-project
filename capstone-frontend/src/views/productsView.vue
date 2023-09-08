@@ -10,7 +10,7 @@
                 <img class="book-img" :src="product.prodUrl">
                 <h5 class="book-name">{{ product.prodName }}</h5>
                 <!-- <p class="book-price">R {{ product.prodPrice }}</p> -->
-                <button class="btn" type="button">View More</button>
+                <button class="btn" type="button" @click="viewBook(product.prodID)">View More</button>
             <!-- </router-link> -->
         </div>
     </div>
@@ -30,6 +30,13 @@
         }, methods: {
             log(id) {
                 console.log(id);
+            },
+            viewBook(prodID) {
+                const selectBook = this.products.find(
+                    (product) => product.prodID === prodID
+                );
+                this.$store.commit("setSingleBook", selectBook);
+                this.$router.push({ name: "singleBookView", params: {prodID: prodID}});
             }
         }
     }
