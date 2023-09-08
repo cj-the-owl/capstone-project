@@ -67,7 +67,7 @@
                 <td>{{ user.userRole }}</td>
                 <td>{{ user.emailAdd }}</td>
                 <td>{{ user.userPass }}</td>
-                <td><img :src=user.userProfile></td>
+                <td><img class="user-img" :src=user.userProfile></td>
                 <td><update-user :user="user"/>
                     <button class="btn" @click="deleteUser(user.userID)">Delete</button>
                 </td>
@@ -125,3 +125,16 @@
        }
     }
 </script>
+
+<style scoped>
+    .book-img, .user-img {
+        width: 100px;
+    }
+
+    .user-img {
+        height: 100px;
+    }
+    .book-img {
+        height: 150px;
+    }
+</style>
