@@ -24,6 +24,7 @@
                     <router-link class="nav-link" to="#">Cart</router-link>
                     <router-link class="nav-link" to="/login">Login</router-link>
                     <router-link class="nav-link" to="/register">Register</router-link>
+                    <router-link class="nav-link" to="/singleUser">Profile</router-link>
                 </span>
             </div>
         </div>

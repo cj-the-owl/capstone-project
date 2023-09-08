@@ -186,24 +186,24 @@ export default createStore({
 
     async login(context, payload) {
       try {
-        const response = await axios.post(`${baseUrl}/login`, payload);
+        const res = await axios.post(`${baseUrl}login`, payload);
         console.log('Response', response);
         alert('Hi, you have logged in successfully')
-        const {result, token, msg, err} = await response.data
+        const {result, token, msg, err} = await res.data
         if (result) {
           context.commit('setUser', result)
           context.commit('setToken', token);
-          localStorage.setItem('login_token', token);
+          localStorage.setItem('loginToken', token);
           localStorage.setItem('user', JSON.stringify(result));
           context.commit('setMsg', msg);
           setTimeout(() => {
-            router.push({name: 'product'})
+            router.push({name: 'singleUser'})
           }), 3000
         } else {
           context.commit('setMsg', err)
         }
-      } catch (error) {
-        console.error(error)
+      } catch (e) {
+        console.error(e)
       }
     }
 

@@ -12,7 +12,7 @@
                 <input type="password" v-model="payload.userPass" class="form-input" placeholder="Password" required>
             </div>
              <div class="col-6-fs-5 pb-4">
-                <button class="btn" type="submit" @click.prevent="login">Sign-In</button>
+                <button class="btn" type="submit" @click="login()">Sign-In</button>
             </div>
             </div>
         </form>
@@ -38,7 +38,6 @@ computed: {
 
 methods: {
     login() {
-        console.log('Debug:', this.payload);
         this.$store.dispatch('login', this.payload)
     }
 }
