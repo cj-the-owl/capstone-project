@@ -1,7 +1,8 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
 import router from '../router'
 import axios from 'axios';
 const baseUrl = "https://bookworm-co.onrender.com/";
+
 export default createStore({
   state: {
     products: null,
@@ -164,7 +165,7 @@ export default createStore({
         console.log('response:', res);
         alert ('User was edited')
         let { results, err } = await res.data;
-        if (result) {
+        if (results) {
           context.commit('setuser', results[0])
         } else {
           context.commit('setResponse', err)
@@ -188,7 +189,7 @@ export default createStore({
     async login(context, payload) {
       try {
         const res = await axios.post(`${baseUrl}login`, payload);
-        console.log('Response', response);
+        console.log('Response', res);
         alert('Hi, you have logged in successfully')
         const {result, token, msg, err} = await res.data
         if (result) {
