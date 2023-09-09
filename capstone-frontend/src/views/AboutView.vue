@@ -6,9 +6,9 @@
     </div>
 
     <div class="something">
-      <img src="#">
-      <img src="#">
-      <img src="#">
+      <img class="about-img" src="https://i.postimg.cc/fy7xTyqt/Book-aesthetic.jpg">
+      <img class="about-img" src="https://i.postimg.cc/N0Mq6r1t/download-6.jpg">
+      <img class="about-img" src="https://i.postimg.cc/qq29Jcds/Books-book-table-booktok-book-shopping-Waterstones-bookstore-shopping-romance-romcom-love.jpg">
 
       <p class="text-center" id="about-info">Bookworm.Co began as a dream of Caryn Lodewyk, a passionate bibliophile who believed that every individual should have access to the vast universe of knowledge and imagination. Starting with just a few shelves of books, the store rapidly grew into a cornerstone of the Lansdowne community, thanks to the tireless dedication of our staff and the continuous support from our loyal customers.</p>
       <p class="text-center" id="about-info">With a curated selection of thousands of titles spanning from timeless classics to contemporary bestsellers, our shelves cater to all ages and interests. Whether you're searching for an old-time favorite, a niche genre, or the latest bestseller, chances are you'll find it nestled in our aisles. And if you don't, our knowledgeable staff is always on hand to assist or recommend the perfect read.</p>
@@ -47,5 +47,11 @@
     width: 300px;
     height: 450px;
     font-size: 15px;
+  }
+
+  .about-img {
+    height: 300px;
+    width: 300px;
+    border: 3px solid black;
   }
 </style>

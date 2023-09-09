@@ -50,15 +50,14 @@ methods: {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 3px solid black;
+        /* border: 3px solid black; */
         width: 500px;
         margin-top: 30px;
-        background-color: #FFE280;
     }
 
     #heading {
         border: 3px solid black;
-        background-color: #F9F0E9;
+        background-color: #FFE280;
         width: 300px;
     }
 

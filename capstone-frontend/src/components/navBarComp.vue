@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <router-link class="navbar-brand" to="/">Name/Logo</router-link>
+            <router-link class="navbar-brand" to="/"><img class="logo" src="https://i.postimg.cc/02jDXF3D/Screenshot-2023-09-09-124906-removebg-preview.png"></router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,5 +53,10 @@
 
     .navbar-toggler-icon {
         color: black;
+    }
+
+    .logo {
+        width: 100px;
+        height: 60px;
     }
 </style>

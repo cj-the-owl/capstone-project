@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="container fluid">
         <div class="p-5 m-5" id="heading">
-      <h1 class="text-center">Products Admin</h1>
+      <h1 class="text-center">Books Admin</h1>
     </div>
 
     <addBook/>
@@ -36,7 +36,7 @@
     </table>
 
     <div class="p-5 m-5" id="heading">
-      <h1 class="text-center">Products Admin</h1>
+      <h1 class="text-center">Users Admin</h1>
     </div>
 
     <add-user/>
@@ -66,7 +66,7 @@
                 <td>{{ user.gender }}</td>
                 <td>{{ user.userRole }}</td>
                 <td>{{ user.emailAdd }}</td>
-                <td>{{ user.userPass }}</td>
+                <td class="user-pass">{{ user.userPass }}</td>
                 <td><img class="user-img" :src=user.userProfile></td>
                 <td><update-user :user="user"/>
                     <button class="btn" @click="deleteUser(user.userID)">Delete</button>
@@ -136,5 +136,9 @@
     }
     .book-img {
         height: 150px;
+    }
+
+    th, tr, td{
+        background-color: #F9F0E9 !important;
     }
 </style>

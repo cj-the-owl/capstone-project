@@ -53,6 +53,7 @@
     <div class="row">
       <div class="mt-3 col-lg-4">
         <img class="best-sell-img" src="https://i.postimg.cc/RZRTMfMs/10-Spiritual-Reads-That-Are-Basically-Portable-Life-Coaches.jpg" width="140" height="450">
+        <!-- <button class="btn" type="button">View</button> -->
       </div>
       <div class="mt-3 col-lg-4">
         <img class="best-sell-img" src="https://i.postimg.cc/pL2D1TDD/All-the-Bright-Places-Movie-Tie-In-Edition-by-Jennifer-Niven-9780593118924-Penguin-Random-House-com.jpg" width="140" height="450">
@@ -90,11 +91,25 @@ export default {
   }
 
   .best-sell-img {
-    width: 100%;
+    width: 300px;
+    height: 400px;
+    border: 3px solid black;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 100px;
   }
 
   #heading {
     border: 3px solid black;
     background-color: #FFE280;
   }
+
+  /* .btn {
+    border: 3px solid black;
+    border-radius: 0px;
+  } */
 </style>

@@ -5,8 +5,8 @@
     </div>
     <div class="row-align-items-md-stretch">
         <div class="col-md-6">
-            <div class="h-100 p-5 m-4 rounded text center" id="contact-details">
-                <img src="#">
+            <div class="h-100 p-5 rounded text center" id="contact-details">
+                <img class="logo" src="https://i.postimg.cc/02jDXF3D/Screenshot-2023-09-09-124906-removebg-preview.png">
                 <p class="text black">314 Imam Haron Road Lansdowne Cape Town</p>
                 <p class="text black">0712345678</p>
                 <p class="texxt-black">lodewykcarynjayn@gmail.com</p>
@@ -59,10 +59,15 @@
         background-color: #FFE280;
   }
 
+  p {
+    margin-left: 80px;
+  }
+
   ul {
     list-style: none;
     display: flex;
     padding-left: 0rem;
+    margin-left: 75px;
   }
 
   li {
@@ -109,5 +114,10 @@
         background-size: cover;
         height: 25rem;
         background-position: center;
+    }
+
+    .logo {
+        width: 300px;
+        height: 150px;
     }
 </style>
