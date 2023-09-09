@@ -74,4 +74,10 @@
         margin-top: 30px;
         display: flex;
     }
+
+    /* media queries */
+
+    @media screen and (max-width: 400px) {
+        
+    }
 </style>

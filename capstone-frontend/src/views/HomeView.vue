@@ -112,4 +112,22 @@ export default {
     border: 3px solid black;
     border-radius: 0px;
   } */
+
+  /*media queries*/
+
+  @media screen and (max-width: 400px) {
+    .row {
+    /* display:contents; */
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    /* gap: 100px; */
+  }
+
+  .best-sell-img {
+    width: 200px;
+    height: 300px;
+    
+  }
+  }
 </style>
