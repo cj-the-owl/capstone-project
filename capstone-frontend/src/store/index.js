@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+import router from '../router'
 import axios from 'axios';
 const baseUrl = "https://bookworm-co.onrender.com/";
 export default createStore({
@@ -32,7 +33,7 @@ export default createStore({
     setUser: (state, user) => {
       state.user = user,
       state.userAuth = true,
-      localstorage.setItem('user', JSON.stringify(user))
+      localStorage.setItem('user', JSON.stringify(user))
     },
     setToken (state, token) {
       state.token = token
