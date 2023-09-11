@@ -193,14 +193,15 @@ export default createStore({
         alert('Hi, you have logged in successfully')
         const {result, token, msg, err} = await res.data
         if (result) {
+          console.log(token)
           context.commit('setUser', result)
           context.commit('setToken', token);
-          localStorage.setItem('setToken', token);
+          localStorage.setItem('loginToken',token);
           localStorage.setItem('user', JSON.stringify(result));
           context.commit('setMsg', msg);
           setTimeout(() => {
             router.push({name: 'home'})
-          }), 3000
+          }, 3000) 
         } else {
           context.commit('setMsg', err)
         }

@@ -1,0 +1,78 @@
+<template>
+    <div>
+        <div class="book">
+            <div class="inner">
+                <div class="left"></div>
+                <div class="middle"></div>
+                <div class="right"></div>
+            </div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+    .book {
+        --color: #fff;
+        --duration: 6.8s;
+        width: 32px;
+        height: 12px;
+        position: relative;
+        margin: 32px 0 0 0;
+        zoom: 1.5;
+    }
+
+    .book .inner {
+        width: 32px;
+        height: 12px;
+        position: relative;
+        transform-origin: 2px 2px;
+        transform: rotateZ(-90deg);
+        animation: book var(--duration) ease infinite;
+    }
+
+    .book .inner .left,
+    .book .inner .right {
+        width: 60px;
+        height: 4px;
+        top: 0;
+        border-radius: 2px;
+        background: var(--color);
+        position: absolute;
+    }
+
+    .book .inner .left:before,
+    .book .inner .right:before {
+        content: "";
+        width: 48px;
+        height: 4px;
+        border-radius: 2px;
+        background: inherit;
+        position: absolute;
+        top: -10px;
+        left: 6px;
+    }
+
+    .book .inner .left {
+        right: 28px
+    }
+</style>
