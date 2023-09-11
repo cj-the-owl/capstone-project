@@ -19,4 +19,8 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 </style>

@@ -61,8 +61,7 @@
       <div class="mt-3 col-lg-4">
         <img class="best-sell-img" src="https://i.postimg.cc/dtn739yy/Glass-Houses-book-by-Rachel-Caine.jpg" width="140" height="450">
       </div>
-    </div>
-    <div class="row">
+
       <div class="mt-3 col-lg-4">
         <img class="best-sell-img" src="https://i.postimg.cc/WzNNcQSf/A-book-about-a-hobby.jpg" width="140" height="450">
       </div>
@@ -73,6 +72,9 @@
         <img class="best-sell-img" src="https://i.postimg.cc/wBjnH9dN/What-If-It-s-Us-Book-Review-The-One-with-Too-Many-Harry-Potter-References-Sophia-Ismaa.jpg" width="140" height="450">
       </div>
     </div>
+    <!-- <div class="row">
+      
+    </div> -->
   </div>
 </div>
   
@@ -115,6 +117,93 @@ export default {
 
   /*media queries*/
 
+
+  @media screen and (max-width: 1130px) {
+    .row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .best-sell-img {
+    width: 230px;
+    height: 330px; 
+  }
+
+  }
+
+  @media screen and (max-width: 900px) {
+    .row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .best-sell-img {
+    width: 200px;
+    height: 300px; 
+  }
+
+  }
+  
+  @media screen and (max-width: 840px) {
+    .row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .best-sell-img {
+    width: 190px;
+    height: 290px; 
+  }
+
+  }
+  @media screen and (max-width: 760px) {
+    .row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .best-sell-img {
+    width: 150px;
+    height: 250px; 
+  }
+
+  }
+  @media screen and (max-width: 650px) {
+    .row {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .best-sell-img {
+    width: 200px;
+    height: 300px;
+    
+  }
+  }
+  @media screen and (max-width: 500px) {
+    .row {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .best-sell-img {
+    width: 150px;
+    height: 250px;
+    
+  }
+  }
   @media screen and (max-width: 400px) {
     .row {
     /* display:contents; */
