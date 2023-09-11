@@ -40,10 +40,10 @@
         methods: {
             saveUser() {
                 this.$store.dispatch("saveUser", this.model.user);
-                setTimeout(() => {
-                    console.log("Loading...");
-                    location.reload();
-                }, 500)
+                // setTimeout(() => {
+                //     console.log("Loading...");
+                //     location.reload();
+                // }, 500)
             }
         }
     }

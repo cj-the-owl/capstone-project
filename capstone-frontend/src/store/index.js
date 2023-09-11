@@ -195,11 +195,11 @@ export default createStore({
         if (result) {
           context.commit('setUser', result)
           context.commit('setToken', token);
-          localStorage.setItem('loginToken', token);
+          localStorage.setItem('setToken', token);
           localStorage.setItem('user', JSON.stringify(result));
           context.commit('setMsg', msg);
           setTimeout(() => {
-            router.push({name: 'singleUser'})
+            router.push({name: 'home'})
           }), 3000
         } else {
           context.commit('setMsg', err)
