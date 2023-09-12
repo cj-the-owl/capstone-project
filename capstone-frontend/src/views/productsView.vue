@@ -14,12 +14,14 @@
             <!-- </router-link> -->
         </div>
     </div>
-    <div v-else>Just wait gou....</div>
+    <div v-else> <spinner-comp/> </div>
     </div>
 </template>
 
 <script>
+import spinnerComp from '@/components/spinnerComp.vue';
     export default {
+  components: { spinnerComp },
         computed: {
             products() {
                 return this.$store.state.products;

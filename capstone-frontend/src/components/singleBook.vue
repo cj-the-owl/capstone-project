@@ -12,13 +12,15 @@
                     <button class="btn" type="button">Add To Cart</button>
                 </div>
             </div>
-            <div v-else>I dunno bru</div>
+            <div v-else> <spinner-comp/> </div>
         </div>
     </div>
 </template>
 
 <script>
+import spinnerComp from './spinnerComp.vue';
     export default {
+  components: { spinnerComp },
         computed: {
             product() {
                 return this.$store.state.singleBook;

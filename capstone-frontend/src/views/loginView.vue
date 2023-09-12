@@ -20,28 +20,41 @@
 </template>
 
 <script>
+import { useCookies } from "vue3-cookies";
+const { cookies } = useCookies();
 export default {
+  props: ['payload'],
+
     data() {
-    return {
-        payload: {
-            emailAdd: "",
-            userPass: ""
+        return {
+            payload: {
+                emailAdd: '',
+                userPass: ''
+            }
+        }
+    },
+
+    computed: {
+        message() {
+            return this.$store.state.msg
         },
-    }
-},
 
-computed: {
-    user() {
-        return this.$store.state.user
-    }
-},
+        user() {
+            return this.$store.state.user
+        }
+    },
 
-methods: {
-    login() {
-        this.$store.dispatch('login', this.payload)
+    methods: {
+        login() {
+            this.$store.dispatch('login', this.payload)
+            this.$router.push("/");
+        }
+    },
+
+    mounted() {
+      console.log(cookies.get('setToken'));
     }
-}
-}
+};
 </script>
 
 <style scoped>

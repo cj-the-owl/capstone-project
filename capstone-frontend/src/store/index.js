@@ -1,7 +1,9 @@
 import { createStore } from 'vuex';
 import router from '../router'
 import axios from 'axios';
+import { useCookies } from 'vue3-cookies';
 const baseUrl = "https://bookworm-co.onrender.com/";
+const { cookies } = useCookies();
 
 export default createStore({
   state: {
@@ -12,7 +14,7 @@ export default createStore({
     users: null,
     user: null || JSON.parse(localStorage.getItem('user')),
     userAuth: null,
-    token: null,
+    jwToken: null,
     product: null,
     msg: null
   },
@@ -36,8 +38,8 @@ export default createStore({
       state.userAuth = true,
       localStorage.setItem('user', JSON.stringify(user))
     },
-    setToken (state, token) {
-      state.token = token
+    setToken (state, jwToken) {
+      state.jwToken = jwToken
     },
     setMsg: (state, msg) => {
       state.msg = msg;
@@ -189,27 +191,22 @@ export default createStore({
     async login(context, payload) {
       try {
         const res = await axios.post(`${baseUrl}login`, payload);
-        console.log('Response', res);
-        alert('Hi, you have logged in successfully')
-        const {result, token, msg, err} = await res.data
+        const { result, jwToken, msg, err } = await res.data;
+
         if (result) {
-          console.log(token)
-          context.commit('setUser', result)
-          context.commit('setToken', token);
-          localStorage.setItem('loginToken',token);
-          localStorage.setItem('user', JSON.stringify(result));
-          context.commit('setMsg', msg);
-          setTimeout(() => {
-            router.push({name: 'home'})
-          }, 3000) 
+          context.commit("setUser", result);
+          context.commit("setToken", jwToken);
+          localStorage.setItem("setToken", jwToken);
+          localStorage.setItem("user", JSON.stringify(result));
+          cookies.set("setToken", jwToken);
+          context.commit("setMsg", msg);
         } else {
-          context.commit('setMsg', err)
+          context.commit("setMsg", err);
         }
       } catch (e) {
-        console.error(e)
+        console.error(e);
       }
-    }
-
+    },
   },
   modules: {
   }
