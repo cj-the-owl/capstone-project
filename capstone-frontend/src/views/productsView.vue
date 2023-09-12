@@ -21,6 +21,7 @@
 <script>
 import spinnerComp from '@/components/spinnerComp.vue';
     export default {
+        
   components: { spinnerComp },
         computed: {
             products() {
@@ -69,9 +70,11 @@ import spinnerComp from '@/components/spinnerComp.vue';
         text-align: center;
         border: 3px solid black;
         border-top: 0px;
-        padding-top: 10px;
-        height: 50px;
+        padding: 10px;
+        /* height: 50px; */
         background-color: #FFE280;
+        inline-size: 300px;
+        overflow-wrap: break-word;
     }
 
     .btn {

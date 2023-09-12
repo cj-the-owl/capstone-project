@@ -9,14 +9,13 @@ export default createStore({
   state: {
     products: null,
     product: null,
-    product: null,
     singleBook: null,
     users: null,
     user: null || JSON.parse(localStorage.getItem('user')),
     userAuth: null,
     jwToken: null,
-    product: null,
-    msg: null
+    msg: null,
+    asc: true,
   },
   getters: {
   },
@@ -43,6 +42,15 @@ export default createStore({
     },
     setMsg: (state, msg) => {
       state.msg = msg;
+    },
+    setPriceSort: (state) => {
+      state.products.sort((a, b) => {
+        return a.prodPrice - b.prodPrice;
+      });
+      if (!state.asc) {
+        state.products.reverse();
+      }
+      state.asc = !state.asc;
     }
   },
   actions: {
