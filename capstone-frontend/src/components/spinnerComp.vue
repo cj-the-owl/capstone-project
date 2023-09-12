@@ -37,7 +37,7 @@
         width: 32px;
         height: 12px;
         position: relative;
-        margin: 50px 0 0 0;
+        margin: 80px 0 0 0;
         zoom: 1.5;
     }
 
