@@ -82,4 +82,34 @@ import spinnerComp from '@/components/spinnerComp.vue';
         border-radius: 0px;
         background-color: #BEE0DF;
     }
+
+    /* media queries */
+
+    @media screen and (max-width: 400px) {
+        #prods {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .book-img {
+        height: 350px;
+        width: 250px;
+        border: 3px solid black;
+    }
+
+    .book-name {
+        text-align: center;
+        border: 3px solid black;
+        border-top: 0px;
+        padding: 10px;
+        /* height: 50px; */
+        background-color: #FFE280;
+        inline-size: 250px;
+        overflow-wrap: break-word;
+    }
+    }
 </style>

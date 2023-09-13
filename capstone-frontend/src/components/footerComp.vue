@@ -68,6 +68,7 @@
 
     .navi:hover, .soc:hover {
         color: #FFE280;
+        font-weight: bolder;
     }
 
     .footer-info {

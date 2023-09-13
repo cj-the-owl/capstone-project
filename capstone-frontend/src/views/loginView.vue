@@ -14,6 +14,9 @@
              <div class="col-6-fs-5 pb-4">
                 <button class="btn" type="submit" @click="login()">Sign-In</button>
             </div>
+            <div>
+                <router-link class="nav-link" to="/register">Don't have an account? Register Here</router-link>
+            </div>
             </div>
         </form>
     </div>
@@ -86,5 +89,10 @@ export default {
         border-radius: 0px;
         height: 50px;
         width: 300px;
+    }
+
+    .nav-link:hover {
+        color: #FFE280;
+        font-weight: bolder;
     }
 </style>

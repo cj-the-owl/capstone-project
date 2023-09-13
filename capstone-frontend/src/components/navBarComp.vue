@@ -21,9 +21,8 @@
                     </li>
                 </ul>
                 <span class="navbar-nav navbar-text">
-                    <router-link class="nav-link" to="#">Cart</router-link>
+                    <cart-comp/>
                     <router-link class="nav-link" to="/login">Login</router-link>
-                    <router-link class="nav-link" to="/register">Register</router-link>
                     <router-link class="nav-link" to="/singleUser">Profile</router-link>
                 </span>
             </div>
@@ -32,7 +31,9 @@
 </template>
 
 <script>
+import cartComp from './cartComp.vue'
     export default {
+  components: { cartComp },
 
     }
 </script>
