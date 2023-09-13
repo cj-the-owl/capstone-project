@@ -85,6 +85,114 @@ import spinnerComp from '@/components/spinnerComp.vue';
 
     /* media queries */
 
+    @media screen and (max-width: 600px) {
+        #prods {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .book-img {
+        height: 350px;
+        width: 250px;
+        border: 3px solid black;
+    }
+
+    .book-name {
+        text-align: center;
+        border: 3px solid black;
+        border-top: 0px;
+        padding: 10px;
+        /* height: 50px; */
+        background-color: #FFE280;
+        inline-size: 250px;
+        overflow-wrap: break-word;
+    }
+    }
+    @media screen and (max-width: 600px) {
+        #prods {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .book-img {
+        height: 350px;
+        width: 250px;
+        border: 3px solid black;
+    }
+
+    .book-name {
+        text-align: center;
+        border: 3px solid black;
+        border-top: 0px;
+        padding: 10px;
+        /* height: 50px; */
+        background-color: #FFE280;
+        inline-size: 250px;
+        overflow-wrap: break-word;
+    }
+    }
+    @media screen and (max-width: 550px) {
+        #prods {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .book-img {
+        height: 300px;
+        width: 200px;
+        border: 3px solid black;
+    }
+
+    .book-name {
+        text-align: center;
+        border: 3px solid black;
+        border-top: 0px;
+        padding: 10px;
+        /* height: 50px; */
+        background-color: #FFE280;
+        inline-size: 200px;
+        overflow-wrap: break-word;
+    }
+    }
+    @media screen and (max-width: 500px) {
+        #prods {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .book-img {
+        height: 400px;
+        width: 300px;
+        border: 3px solid black;
+    }
+
+    .book-name {
+        text-align: center;
+        border: 3px solid black;
+        border-top: 0px;
+        padding: 10px;
+        /* height: 50px; */
+        background-color: #FFE280;
+        inline-size: 250px;
+        overflow-wrap: break-word;
+    }
+    }
     @media screen and (max-width: 400px) {
         #prods {
         display: grid;
