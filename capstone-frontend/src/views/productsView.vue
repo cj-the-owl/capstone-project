@@ -9,6 +9,7 @@
         <option value="Young Adult">Young Adult</option>
         <option value="Fiction">Fiction</option>
         <option value="Fantasy Fiction">Fantasy Fiction</option>
+        <option value="Manga">Manga</option>
       </select>
 
         <input

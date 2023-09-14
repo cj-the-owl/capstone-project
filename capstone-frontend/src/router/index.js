@@ -49,7 +49,7 @@ const routes = [
     path: '/singleUser',
     name: 'singleUser',
     component: () => import('../views/singleUserView.vue')
-  }
+  },
 ]
 
 const router = createRouter({
