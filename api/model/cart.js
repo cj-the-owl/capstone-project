@@ -3,7 +3,7 @@ const db = require("../config/db.config")
 // const {createToken} = require("../middleware/authenticateUser")
 
 class Cart {
-    fetchCart(req, res) {
+    getCart(req, res) {
         const strQry = 
 
         `SELECT prodName, prodPrice, prodURL FROM Users INNER JOIN Cart ON Users.userID = Cart.userID INNER JOIN Products ON Cart.prodID = Products.prodID WHERE Cart.userID = ${req.params.id};`;
