@@ -6,7 +6,7 @@ const {Products} = require("../model/products")
 const {User} = require("../model/users")
 const product = new Products()
 const user = new User()
-const cart = new Cart()
+const cart = new cart()
 
 //for the home page of the api
 route.get('/', (req, res) => {
