@@ -11,9 +11,9 @@
                 <p class="text black">0712345678</p>
                 <p class="texxt-black">lodewykcarynjayn@gmail.com</p>
                 <ul>
-                    <li><img src="https://i.postimg.cc/JhRJh7xR/icons8-instagram-50-4.png"></li>
-                    <li><img src="https://i.postimg.cc/cJR1gsvL/icons8-github-50-4.png"></li>
-                    <li><img src="https://i.postimg.cc/fRmjLrhf/icons8-linkedin-50-4.png"></li>
+                    <a href="https://www.instagram.com/cj.the.owl/"><li><img src="https://i.postimg.cc/JhRJh7xR/icons8-instagram-50-4.png"></li></a>
+                    <a href="https://github.com/cj-the-owl"><li><img src="https://i.postimg.cc/cJR1gsvL/icons8-github-50-4.png"></li></a>
+                    <a href="https://www.linkedin.com/in/caryn-jayn-lodewyk-411165276/"><li><img src="https://i.postimg.cc/fRmjLrhf/icons8-linkedin-50-4.png"></li></a>
                 </ul>
             </div>
         </div>
@@ -120,4 +120,26 @@
         width: 300px;
         height: 150px;
     }
+
+    /* #heading h1 {
+    overflow: hidden;
+    border-right: .10em solid orange; The typwriter cursor
+    white-space: nowrap; Keeps the content on a single line
+    margin: 0 auto; Gives that scrolling effect as the typing happens
+    letter-spacing: .1em; Adjust as needed
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .95s step-end infinite;
+  }
+
+  @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+The typewriter cursor effect
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+} */
 </style>

@@ -48,12 +48,14 @@
   <div class="container-marketing">
     <div class="p-5 m-5" id="heading">
       <h1 class="text-center">Some of our best sellers</h1>
-      <p class="text-center">Discover the best sellers that have captured the hearts and imaginations of readers worldwide. Dive into stories that have left a lasting impact, and find out why they've earned their top spot</p>
+      <p class="text-center">Discover the best sellers that have captured the hearts and imaginations of readers worldwide. Dive into stories that have left a lasting impact, and find out why they've earned their top spot<br><br>
+        <router-link to="/products"><button type="button" class="btn">View Books</button></router-link></p>
+      
     </div>
     <div class="row">
       <div class="mt-3 col-lg-4">
         <img class="best-sell-img" src="https://i.postimg.cc/RZRTMfMs/10-Spiritual-Reads-That-Are-Basically-Portable-Life-Coaches.jpg" width="140" height="450">
-        <!-- <button class="btn" type="button">View</button> -->
+        <button class="btn" type="button">View</button>
       </div>
       <div class="mt-3 col-lg-4">
         <img class="best-sell-img" src="https://i.postimg.cc/pL2D1TDD/All-the-Bright-Places-Movie-Tie-In-Edition-by-Jennifer-Niven-9780593118924-Penguin-Random-House-com.jpg" width="140" height="450">
@@ -110,10 +112,33 @@ export default {
     background-color: #FFE280;
   }
 
-  /* .btn {
+  .btn {
     border: 3px solid black;
     border-radius: 0px;
-  } */
+    background-color: #bee0df;
+  }
+
+  #heading h1 {
+    overflow: hidden;
+    border-right: .10em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: .1em; Adjust as needed */
+    animation: 
+    typing 3.5s steps(60, end),
+    blink-caret .55s step-end infinite;
+  }
+
+  @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
 
   /*media queries*/
 

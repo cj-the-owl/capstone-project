@@ -150,4 +150,40 @@
     th, tr, td{
         background-color: #F9F0E9 !important;
     }
+
+    #heading {
+        border: 3px solid black;
+        background-color: #FFE280;
+    }
+     .btn {
+        border: 3px solid black;
+        border-radius: 0px;
+        background-color: #BEE0DF;
+        color: black !important;
+        margin-top: 5px;
+     }
+
+
+    /* h1 {
+  width: 22ch;
+  animation: typing 5s steps(20), blink .5s step-end alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  100% {
+    border-color: transparent
+  }
+} */
 </style>

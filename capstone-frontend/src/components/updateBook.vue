@@ -80,3 +80,39 @@
     },
 };
 </script>
+
+<style scoped>
+    .modal-header, .modal-footer {
+        background-color: #FFE280;
+    }
+
+    .modal-header {
+        border-bottom: 3px solid black;
+    }
+    .modal-footer {
+        border-top: 3px solid black;
+    }
+
+    .btn, .btn-close {
+        border: 3px solid black;
+        border-radius: 0px;
+        background-color: #BEE0DF;
+        color: black !important
+    }
+
+    .modal-body {
+        background-color: #F9F0E9;
+    }
+
+    .modal-dialog {
+        border: 3px solid black;
+    }
+
+    .modal-content {
+        border-radius: 0px !important;
+    }
+
+    .input {
+        border: 3px solid black;
+    }
+</style>

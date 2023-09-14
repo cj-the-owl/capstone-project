@@ -10,6 +10,7 @@ export default createStore({
     products: null,
     product: null,
     singleBook: null,
+    cart: null,
     users: null,
     user: null || JSON.parse(localStorage.getItem('user')),
     userAuth: null,
@@ -28,6 +29,9 @@ export default createStore({
     },
     setSingleBook(state, product) {
       state.singleBook = product
+    },
+    setCart(state, cart) {
+      state.cart = cart
     },
     setUsers: (state, users) => {
       state.users = users
@@ -128,6 +132,52 @@ export default createStore({
         context.commit("setMsg", "eeeeeerroooorrr")
       }
     },
+
+
+    // async getCart(context, id) {
+    //   const res = await axios.get(`${baseUrl}user/${id}/cart`);
+    //   context.commit('setCart', res.data)
+    //   console.log(id);
+    // },
+    async addCart(context, payload) {
+      console.log(payload);
+      let userID = localStorage.getItem('userID')
+      const {res, msg} = await axios.post(`${baseUrl}user/${userID}/cart`, payload);
+      if (res) {
+        context.commit('setCart', res.data)
+      } else {
+        context.commit('setMsg', msg)
+      }
+    },
+    async updateCart(context, id) {
+      const res = await axios.put(`${baseUrl}/user/${id}cart/${id}`);
+      let {results, err} = await res.data
+      if (results) {
+        context.commit('setCart', results)
+      } else {
+        context.commit('setMsg', err)
+      }
+    },
+    async deleteCart({ commit, dispatch }, id) {
+      try {
+        await axios.delete(`${baseUrl}/user/${id}/cart`);
+        commit('setMsg', 'Cart deleted successfully');
+        dispatch('getCart');
+      } catch (error) {
+        commit('setMsg', 'Failed to delete');
+      } 
+    },
+    async deleteACart({ commit, dispatch }, id) {
+      try {
+        await axios.delete(`${baseUrl}/user/${id}/cart/${id}`);
+        commit('setMsg', 'Cart deleted successfully');
+        dispatch('getCart');
+      } catch (error) {
+        commit('setMsg', 'Failed to delete');
+      } 
+    },
+ 
+
 
     async fetchUsers(context) {
       try{

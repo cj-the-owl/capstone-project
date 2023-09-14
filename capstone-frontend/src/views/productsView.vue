@@ -6,7 +6,7 @@
         <select class="btn text-start" required v-model="category">
         <option value="All">All Categories</option>
         <option value="Self-Help">Self-Help</option>
-        <option value="Young-Adult">Young-Adult</option>
+        <option value="Young Adult">Young Adult</option>
         <option value="Fiction">Fiction</option>
         <option value="Fantasy Fiction">Fantasy Fiction</option>
       </select>
@@ -37,8 +37,8 @@
         <img class="book-img" :src="product.prodUrl" />
         <div class="book-name">
           <h5>{{ product.prodName }}</h5>
-          <p>{{ product.category }}</p>
-          <p>R{{ product.prodPrice }}</p>
+          <!-- <p>{{ product.category }}</p> -->
+          <!-- <p>R{{ product.prodPrice }}</p> -->
         </div>
 
         <!-- <p class="book-price">R {{ product.prodPrice }}</p> -->
