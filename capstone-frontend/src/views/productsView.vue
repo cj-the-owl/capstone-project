@@ -314,6 +314,12 @@ export default {
     inline-size: 300px;
     overflow-wrap: break-word;
   }
+
+  .sort-stuff {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
 }
 @media screen and (max-width: 650px) {
   #prods {
@@ -442,5 +448,30 @@ export default {
     grid-template-columns: auto;
     gap: 5px;
 }
+
+/* select, input {
+    width: 100px;
+  } */
+}
+
+@media screen and (max-width: 370px) {
+  select, input, .btn {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 350px) {
+  select, input, .btn {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 330px) {
+  select, input, .btn {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 300px) {
+  select, input, .btn {
+    width: 100px;
+  }
 }
 </style>
