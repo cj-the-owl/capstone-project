@@ -20,7 +20,7 @@
 
         <div class="col-md-6">
             <div class="h-100 p-5 m-4 text-black rounded-3" id="form-side">
-                <form action="#" method="POST">
+                <form action="https://formspree.io/f/xdordeke" method="POST">
                     <div class="col-6 fs-5 pb-4">
                         <input type="text" class="form-input" id="fullName" placeholder="Full Name Here" required oninvalid="this.setCustomValidity('Insert Name & Surname')">
                     </div>
