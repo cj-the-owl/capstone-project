@@ -4,9 +4,10 @@ const bodyParser = require("body-parser")
 const route = express.Router()
 const {Products} = require("../model/products")
 const {User} = require("../model/users")
+const {Cart} = require("../model/cart")
 const product = new Products()
 const user = new User()
-const cart = new cart()
+const cart = new Cart()
 
 //for the home page of the api
 route.get('/', (req, res) => {
