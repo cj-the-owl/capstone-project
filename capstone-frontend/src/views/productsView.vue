@@ -20,7 +20,7 @@
           aria-describedby="search-addon"
         />
 
-      <button type="button" @click="sortByPrice" class="btn">
+      <button type="button" @click="sortByPrice()" class="btn">
         Sort By Price
       </button>
       </div>
@@ -38,6 +38,7 @@
         <div class="book-name">
           <h5>{{ product.prodName }}</h5>
           <p>{{ product.category }}</p>
+          <p>R{{ product.prodPrice }}</p>
         </div>
 
         <!-- <p class="book-price">R {{ product.prodPrice }}</p> -->
@@ -55,12 +56,6 @@
 import spinnerComp from "@/components/spinnerComp.vue";
 export default {
   components: { spinnerComp },
-
-  methods: {
-    sortByPrice() {
-      this.$store.commit("setPriceSort");
-    },
-  },
 
   data() {
     return {
@@ -96,6 +91,9 @@ export default {
     this.$store.dispatch("fetchProducts");
   },
   methods: {
+    sortByPrice() {
+      this.$store.commit("setPriceSort");
+    },
     log(id) {
       console.log(id);
     },
@@ -283,6 +281,12 @@ export default {
     inline-size: 250px;
     overflow-wrap: break-word;
   }
+
+  .sort-stuff {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
 }
 @media screen and (max-width: 750px) {
   #prods {
@@ -335,6 +339,12 @@ export default {
     inline-size: 250px;
     overflow-wrap: break-word;
   }
+
+  .sort-stuff {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
 }
 @media screen and (max-width: 550px) {
   #prods {
@@ -361,6 +371,12 @@ export default {
     inline-size: 200px;
     overflow-wrap: break-word;
   }
+
+  .sort-stuff {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
 }
 @media screen and (max-width: 500px) {
   #prods {
@@ -387,6 +403,12 @@ export default {
     inline-size: 250px;
     overflow-wrap: break-word;
   }
+
+  .sort-stuff {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
 }
 @media screen and (max-width: 400px) {
   #prods {
@@ -413,5 +435,11 @@ export default {
     inline-size: 250px;
     overflow-wrap: break-word;
   }
+
+  .sort-stuff {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
 }
 </style>
