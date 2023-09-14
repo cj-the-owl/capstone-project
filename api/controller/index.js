@@ -62,7 +62,7 @@ route.post("/register", bodyParser.json(), (req, res) => {
 
 
 route.get('/user/:id/carts', (req, res) => {
-    cart.fetchCart(req, res);
+    cart.getCart(req, res);
 })
 
 route.post('/user/:id/cart', bodyParser.json(), (req, res) => {
