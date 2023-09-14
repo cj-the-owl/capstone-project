@@ -85,7 +85,7 @@ import spinnerComp from '@/components/spinnerComp.vue';
 
     /* media queries */
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 750px) {
         #prods {
         display: grid;
         grid-template-columns: auto auto;
@@ -96,8 +96,8 @@ import spinnerComp from '@/components/spinnerComp.vue';
     }
 
     .book-img {
-        height: 350px;
-        width: 250px;
+        height: 400px;
+        width: 300px;
         border: 3px solid black;
     }
 
@@ -108,11 +108,11 @@ import spinnerComp from '@/components/spinnerComp.vue';
         padding: 10px;
         /* height: 50px; */
         background-color: #FFE280;
-        inline-size: 250px;
+        inline-size: 300px;
         overflow-wrap: break-word;
     }
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 650px) {
         #prods {
         display: grid;
         grid-template-columns: auto auto;
