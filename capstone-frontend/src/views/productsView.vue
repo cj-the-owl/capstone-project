@@ -85,6 +85,141 @@ import spinnerComp from '@/components/spinnerComp.vue';
 
     /* media queries */
 
+    @media screen and (max-width: 1350px) {
+        #prods {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .book-img {
+        height: 350px;
+        width: 250px;
+        border: 3px solid black;
+    }
+
+    .book-name {
+        text-align: center;
+        border: 3px solid black;
+        border-top: 0px;
+        padding: 10px;
+        /* height: 50px; */
+        background-color: #FFE280;
+        inline-size: 250px;
+        overflow-wrap: break-word;
+    }
+    }
+    @media screen and (max-width: 1200px) {
+        #prods {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .book-img {
+        height: 400px;
+        width: 300px;
+        border: 3px solid black;
+    }
+
+    .book-name {
+        text-align: center;
+        border: 3px solid black;
+        border-top: 0px;
+        padding: 10px;
+        /* height: 50px; */
+        background-color: #FFE280;
+        inline-size: 300px;
+        overflow-wrap: break-word;
+    }
+    }
+    @media screen and (max-width: 1000px) {
+        #prods {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .book-img {
+        height: 350px;
+        width: 250px;
+        border: 3px solid black;
+    }
+
+    .book-name {
+        text-align: center;
+        border: 3px solid black;
+        border-top: 0px;
+        padding: 10px;
+        /* height: 50px; */
+        background-color: #FFE280;
+        inline-size: 250px;
+        overflow-wrap: break-word;
+    }
+    }
+    @media screen and (max-width: 850px) {
+        #prods {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .book-img {
+        height: 300px;
+        width: 200px;
+        border: 3px solid black;
+    }
+
+    .book-name {
+        text-align: center;
+        border: 3px solid black;
+        border-top: 0px;
+        padding: 10px;
+        /* height: 50px; */
+        background-color: #FFE280;
+        inline-size: 200px;
+        overflow-wrap: break-word;
+    }
+    }
+    @media screen and (max-width: 650px) {
+        #prods {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .book-img {
+        height: 350px;
+        width: 250px;
+        border: 3px solid black;
+    }
+
+    .book-name {
+        text-align: center;
+        border: 3px solid black;
+        border-top: 0px;
+        padding: 10px;
+        /* height: 50px; */
+        background-color: #FFE280;
+        inline-size: 250px;
+        overflow-wrap: break-word;
+    }
+    }
     @media screen and (max-width: 750px) {
         #prods {
         display: grid;
