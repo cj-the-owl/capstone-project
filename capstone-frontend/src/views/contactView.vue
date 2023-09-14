@@ -121,6 +121,33 @@
         height: 150px;
     }
 
+    /* media queries */
+
+    @media screen and (max-width: 300px) {
+        .row-align-items-md-stretch {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form-side {
+        width: 300px;
+    }
+
+    #fullName, #email, #message {
+        width: 10rem;
+    }
+
+    #form-btn {
+        width: 10rem;
+    }
+
+    #hero {
+        width: 200px;
+    }
+    }
+
     /* #heading h1 {
     overflow: hidden;
     border-right: .10em solid orange; The typwriter cursor
