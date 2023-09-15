@@ -9,14 +9,14 @@
                         <button class="btn-close" type="button" aria-label="close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
-                        <input class="input m-2" type="text" placeholder="User Name" v-model="model.user.firstName">
-                        <input class="input m-2" type="text" placeholder="User Surname" v-model="model.user.lastName">
-                        <input class="input m-2" type="text" placeholder="Age" v-model="model.user.userAge">
-                        <input class="input m-2" type="text" placeholder="Gender" v-model="model.user.gender">
-                        <input class="input m-2" type="text" placeholder="User Role" v-model="model.user.userRole">
-                        <input class="input m-2" type="text" placeholder="User Email" v-model="model.user.emailAdd">
-                        <input class="input m-2" type="text" placeholder="User Password" v-model="model.user.userPass">
-                        <input class="input m-2" type="text" placeholder="User Profile" v-model="model.user.userProfile">
+                        <input class="input m-2" type="text" placeholder="User Name" required oninvalid="this.setCustomValidity('Insert Name')" v-model="model.user.firstName">
+                        <input class="input m-2" type="text" placeholder="User Surname" required oninvalid="this.setCustomValidity('Insert Surname')" v-model="model.user.lastName">
+                        <input class="input m-2" type="text" placeholder="Age" required oninvalid="this.setCustomValidity('Insert Age')" v-model="model.user.userAge">
+                        <input class="input m-2" type="text" placeholder="Gender" required oninvalid="this.setCustomValidity('Insert Gender')" v-model="model.user.gender">
+                        <input class="input m-2" type="text" placeholder="User Role" required oninvalid="this.setCustomValidity('Insert User Role')" v-model="model.user.userRole">
+                        <input class="input m-2" type="text" placeholder="User Email" required oninvalid="this.setCustomValidity('Insert Email')" v-model="model.user.emailAdd">
+                        <input class="input m-2" type="text" placeholder="User Password" required oninvalid="this.setCustomValidity('Insert Password')" v-model="model.user.userPass">
+                        <input class="input m-2" type="text" placeholder="User Profile" required oninvalid="this.setCustomValidity('Insert Profile Url')" v-model="model.user.userProfile">
                     </div>
                     <div class="modal-footer">
                         <button class="btn" type="button" data-bs-dismiss="modal">Close</button>

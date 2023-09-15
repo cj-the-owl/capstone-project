@@ -11,11 +11,11 @@
                             <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="close"></button>
                         </div>
                         <div class="modal-body">
-                            <input class="input m-2" type="text" placeholder="Book Title" v-model="model.product.prodName">
-                            <input class="input m-2" type="text" placeholder="Quantity" v-model="model.product.quantity">
-                            <input class="input m-2" type="text" placeholder="Price" v-model="model.product.prodPrice">
-                            <input class="input m-2" type="text" placeholder="Category" v-model="model.product.category">
-                            <input class="input m-2" type="text" placeholder="Image Url" v-model="model.product.prodUrl">
+                            <input class="input m-2" type="text" placeholder="Book Title" required oninvalid="this.setCustomValidity('Insert Book Title')" v-model="model.product.prodName">
+                            <input class="input m-2" type="text" placeholder="Quantity" required oninvalid="this.setCustomValidity('Insert Quantity')" v-model="model.product.quantity">
+                            <input class="input m-2" type="text" placeholder="Price" required oninvalid="this.setCustomValidity('Insert Price')" v-model="model.product.prodPrice">
+                            <input class="input m-2" type="text" placeholder="Category" required oninvalid="this.setCustomValidity('Insert Category')" v-model="model.product.category">
+                            <input class="input m-2" type="text" placeholder="Image Url" required oninvalid="this.setCustomValidity('Insert Image Url')" v-model="model.product.prodUrl">
                         </div>
                         <div class="modal-footer">
                             <button class="btn" type="button" data-bs-dismiss="modal">Close</button>

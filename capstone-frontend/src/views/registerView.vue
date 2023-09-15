@@ -5,13 +5,13 @@
         </div>
         <div class="p-5 m-3" id="inputs">
             <!-- <form @submit.prevent="saveUser"> -->
-            <input class="input m-3" type="text" placeholder="User Name" v-model="model.user.firstName">
-            <input class="input m-3" type="text" placeholder="User Surname" v-model="model.user.lastName">
-            <input class="input m-3" type="text" placeholder="Age" v-model="model.user.userAge">
-            <input class="input m-3" type="text" placeholder="Gender" v-model="model.user.gender">
-            <input class="input m-3" type="text" placeholder="User Email" v-model="model.user.emailAdd">
-            <input class="input m-3" type="text" placeholder="User Password" v-model="model.user.userPass">
-            <input class="input m-3" type="text" placeholder="User Profile" v-model="model.user.userProfile">
+            <input class="input m-3" type="text" placeholder="User Name" required oninvalid="this.setCustomValidity('Insert Name')" v-model="model.user.firstName">
+            <input class="input m-3" type="text" placeholder="User Surname" required oninvalid="this.setCustomValidity('Insert surname')" v-model="model.user.lastName">
+            <input class="input m-3" type="text" placeholder="Age" required oninvalid="this.setCustomValidity('Insert Age')" v-model="model.user.userAge">
+            <input class="input m-3" type="text" placeholder="Gender" required oninvalid="this.setCustomValidity('Insert Gender')" v-model="model.user.gender">
+            <input class="input m-3" type="text" placeholder="User Email" required oninvalid="this.setCustomValidity('Insert Email Address')" v-model="model.user.emailAdd">
+            <input class="input m-3" type="text" placeholder="User Password" required oninvalid="this.setCustomValidity('Insert Password')" v-model="model.user.userPass">
+            <input class="input m-3" type="text" placeholder="User Profile" required oninvalid="this.setCustomValidity('Insert Profile Url')" v-model="model.user.userProfile">
 
             <button class="btn m-3 fw-bold" type="button" @click="saveUser">Save</button>
         <!-- </form> -->

@@ -6,10 +6,10 @@
                 <h1 class="text-center">Login</h1>
             </div>
             <div class="col-6-fs-5 pb-4">
-                <input type="email" v-model="payload.emailAdd" class="form-input" placeholder="Email" required>
+                <input type="email" v-model="payload.emailAdd" class="form-input" placeholder="Email" required oninvalid="this.setCustomValidity('Insert Email')">
             </div>
             <div class="col-6-fs-5 pb-4">
-                <input type="password" v-model="payload.userPass" class="form-input" placeholder="Password" required>
+                <input type="password" v-model="payload.userPass" class="form-input" placeholder="Password" required oninvalid="this.setCustomValidity('Insert Password')">
             </div>
              <div class="col-6-fs-5 pb-4">
                 <button class="btn" type="submit" @click="login()">Sign-In</button>
