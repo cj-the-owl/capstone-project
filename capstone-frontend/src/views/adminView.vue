@@ -11,10 +11,10 @@
             <tr>
                 <th scope="col">Book Id</th>
                 <th scope="col">Book Title</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Price</th>
-                <th scope="col">Category</th>
-                <th scope="col">Image Url</th>
+                <th class="no2" scope="col">Quantity</th>
+                <th class="no1" scope="col">Price</th>
+                <th class="no1" scope="col">Category</th>
+                <th class="no" scope="col">Image Url</th>
                 <th scope="col">Edit/Delete Book</th>
             </tr>
         </thead>
@@ -23,10 +23,10 @@
             <tr v-if="products">
                 <td>{{ product.prodID }}</td>
                 <td>{{ product.prodName }}</td>
-                <td>{{ product.quantity }}</td>
-                <td>{{ product.prodPrice }}</td>
-                <td>{{ product.category }}</td>
-                <td><img class="book-img" :src="product.prodUrl"></td>
+                <td class="no2">{{ product.quantity }}</td>
+                <td class="no1">{{ product.prodPrice }}</td>
+                <td class="no1">{{ product.category }}</td>
+                <td class="no"><img class="book-img" :src="product.prodUrl"></td>
                 <td><updateBook :product="product"/>
                     <button class="btn" @click="deleteProduct(product.prodID)">Delete</button>
                 </td>
@@ -51,12 +51,12 @@
                 <th scope="col">User Id</th>
                 <th scope="col">Firstname</th>
                 <th scope="col">Lastname</th>
-                <th scope="col">Age</th>
-                <th scope="col">Gender</th>
-                <th scope="col">User Role</th>
-                <th scope="col">Email Address</th>
-                <th scope="col">Password</th>
-                <th scope="col">User Profile</th>
+                <th class="no2" scope="col">Age</th>
+                <th class="no2" scope="col">Gender</th>
+                <th class="no" scope="col">User Role</th>
+                <th class="no1" scope="col">Email Address</th>
+                <th class="no" scope="col">Password</th>
+                <th class="no" scope="col">User Profile</th>
                 <th scope="col">Edit/Delete User</th>
             </tr>
         </thead>
@@ -66,12 +66,12 @@
                 <td>{{ user.userID }}</td>
                 <td>{{ user.firstName }}</td>
                 <td>{{ user.lastName }}</td>
-                <td>{{ user.userAge }}</td>
-                <td>{{ user.gender }}</td>
-                <td>{{ user.userRole }}</td>
-                <td>{{ user.emailAdd }}</td>
-                <td class="user-pass">{{ user.userPass }}</td>
-                <td><img class="user-img" :src=user.userProfile></td>
+                <td class="no2">{{ user.userAge }}</td>
+                <td class="no2">{{ user.gender }}</td>
+                <td class="no">{{ user.userRole }}</td>
+                <td class="no1">{{ user.emailAdd }}</td>
+                <td class="no">{{ user.userPass }}</td>
+                <td class="no"><img class="user-img" :src=user.userProfile></td>
                 <td><update-user :user="user"/>
                     <button class="btn" @click="deleteUser(user.userID)">Delete</button>
                 </td>
@@ -192,6 +192,23 @@
 @keyframes blink {
   from, to { border-color: transparent }
   50% { border-color: rgb(255, 192, 75); }
+}
+
+/* media queries */
+@media screen and (max-width: 1000px) {
+        .no {
+            display:none;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .no {
+            display:none;
+        }
+    }
+@media screen and (max-width: 500px) {
+    .no, .no1, .no2 {
+            display:none;
+        }
 }
 
 </style>
