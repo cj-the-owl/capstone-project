@@ -24,7 +24,7 @@
     </div>
 
     <div class="founder-section">
-      <img class="founder-img" src="#" loading="lazy">
+      <img class="founder-img" src="https://i.postimg.cc/8zP5D4Z3/IMG-20221020-105624-763.jpg" loading="lazy">
 
       <p class="text-center" id="founder-info">Caryn Lodewyk, the visionary behind "Bookworm.Co," was born with a fervent passion for stories. Hailing from the serene Welsh countryside and later studying Literature at Oxford, Caryn embarked on a worldwide journey, immersing herself in global tales and literary cultures. In 2022, she established "Bookworm.Co" in the heart of London. More than just a bookstore, it's a reflection of Caryn's travels and dedication to celebrating stories from all corners of the world. At the core of her ethos is the belief that every book bridges souls and cultures, a philosophy that "Bookworm.Co" cherishes to this day. Caryn's journey with books is a testament to her belief that literature is the bridge between souls, cultures, and epochs. And as you step into "Bookworm.Co," you don't just enter a store - you become part of Caryn's dream, her story, her legacy.</p>
     </div>
@@ -78,16 +78,16 @@
   }
 
   .founder-img {
-    height: 400px;
-    width: 660px;
+    height: 470px;
+    width: 500px;
     border: 3px solid black;
   }
 
   #founder-info {
     border: 3px solid black;
     background-color: #FFE280;
-    width: 660px;
-    height: 400px;
+    width: 500px;
+    height: 470px;
     font-size: 15px;
     padding: 13px;
     margin-bottom: 15px;

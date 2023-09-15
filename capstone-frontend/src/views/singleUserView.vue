@@ -9,9 +9,12 @@
         <div class="user-info">
             <h2>{{ $store.state.user?.firstName }} {{ $store.state.user?.lastName }}</h2>
             <img class="img-fluid" :src="$store.state.user?.userProfile" loading="lazy">
-            <h4>{{ $store.state.user?.emailAdd }}</h4>
-            <h4>{{ $store.state.user?.userRole }}</h4>
-            <p>{{ $store.state.user?.userID }}</p>
+            <p>{{ $store.state.user?.gender }}</p>
+            <p>{{ $store.state.user?.userAge }}</p>
+            <p>{{ $store.state.user?.userRole }}</p>
+            <p>{{ $store.state.user?.emailAdd }}</p>
+            
+            
         </div>
         <div class="buttons">
 
@@ -150,7 +153,7 @@
         color: black !important
     }
 
-    .btn:hover {
+    .btn:hover, a:hover {
         color: #ffe280 !important;
         font-weight: bolder;
     }
@@ -169,5 +172,21 @@
 
     .input {
         border: 3px solid black;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .buttons .btn {
+        width: 100px;
+    }
+
+    a {
+        color: black !important;
+        text-decoration: none !important;
     }
 </style>

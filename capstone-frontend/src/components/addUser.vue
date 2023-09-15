@@ -41,7 +41,7 @@
                         userRole: "",
                         emailAdd: "",
                         userPass: "",
-                        userProfile: ""
+                        userProfile: "https://i.postimg.cc/QthGSHZS/Default-avatar-profile-icon-of-social-media-user.jpg"
                     }
                 }
             };

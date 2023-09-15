@@ -132,28 +132,27 @@ export default {
 
   #heading h1 {
     overflow: hidden;
-    border-right: .10em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    /* letter-spacing: .1em; Adjust as needed */
-    animation: 
-    typing 3.5s steps(60, end),
-    blink-caret .55s step-end infinite;
+    width: 50%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 2.5s steps(30), blink .55s step-end infinite;
   }
-
   @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0 } 
 }
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
+@keyframes blink {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  50% { border-color: rgb(255, 192, 75); }
 }
 
   /*media queries*/
 
+  @media screen and (max-width: 1360px) {
+    #heading h1 {
+      white-space: wrap;
+    }
+  }
 
   @media screen and (max-width: 1130px) {
     .row {
@@ -240,6 +239,11 @@ export default {
     height: 250px;
     
   }
+
+  .carousel-text {
+    font-weight: bolder;
+    font-size: 40px
+  }
   }
   @media screen and (max-width: 400px) {
     .row {
@@ -254,6 +258,15 @@ export default {
     width: 200px;
     height: 300px;
     
+  }
+
+  .carousel-text {
+    font-weight: bolder;
+    font-size: 30px
+  }
+
+  .mt-3 {
+    display: grid;
   }
   }
 </style>

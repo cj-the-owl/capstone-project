@@ -31,7 +31,7 @@
             </ul>
         </div>
         <div>
-            <p class="text-center pb-1 fw-bold">Copyright ©️ cj-the-owl</p>
+            <p class="text-center pb-1 fw-bold">Copyright ©️ cj-the-owl {{ new Date().getFullYear() }}</p>
         </div>
     </footer>
 </template>

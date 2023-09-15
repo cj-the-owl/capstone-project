@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <div class="position relative overflow-hidden" id="hero">
+    <div class="overflow-hidden" id="hero">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.293594955954!2d18.49008737515277!3d-33.98499182508532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc433bfcf832a1%3A0x3b4439b8cc517802!2s314%20Imam%20Haron%20Rd%2C%20Lansdowne%2C%20Cape%20Town%2C%207780!5e0!3m2!1sen!2sza!4v1694712479847!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </div>
@@ -116,9 +116,14 @@
         height: 150px;
     }
 
+    .btn:hover {
+        color: #ffe280 !important;
+        font-weight: bolder;
+    }
+
     /* media queries */
 
-    @media screen and (max-width: 300px) {
+    @media screen and (max-width: 400px) {
         .row-align-items-md-stretch {
         display: grid;
         grid-template-columns: auto;
@@ -127,7 +132,8 @@
     }
 
     #form-side {
-        width: 300px;
+        width: 250px;
+        margin-left: 90px !important;
     }
 
     #fullName, #email, #message {
@@ -139,8 +145,85 @@
     }
 
     #hero {
-        width: 200px;
+        width: 100% !important;
+        margin-left: 0px !important;
     }
+
+    .logo {
+        width: 240px;
+    }
+
+  ul, p {
+    margin-left: 70px;
+  }
+    }
+    @media screen and (max-width: 350px) {
+        .row-align-items-md-stretch {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form-side {
+        width: 250px;
+        margin-left: 90px !important;
+    }
+
+    #fullName, #email, #message {
+        width: 10rem;
+    }
+
+    #form-btn {
+        width: 10rem;
+    }
+
+    #hero {
+        width: 280px;
+        margin-left: 0px !important;
+    }
+
+    .logo {
+        width: 240px;
+    }
+
+  ul, p {
+    margin-left: 65px;
+  }
+    }
+    @media screen and (max-width: 300px) {
+        .row-align-items-md-stretch {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form-side {
+        width: 250px;
+        margin-left: 90px !important;
+    }
+
+    #fullName, #email, #message {
+        width: 10rem;
+    }
+
+    #form-btn {
+        width: 10rem;
+    }
+
+    #hero {
+        width: 280px;
+        margin-left: 10px !important;
+    }
+
+    .logo {
+        width: 240px;
+    }
+
+  ul, p {
+    margin-left: 60px;
+  }
     }
 
     /* #heading h1 {

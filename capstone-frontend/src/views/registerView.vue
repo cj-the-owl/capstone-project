@@ -58,17 +58,20 @@
   #inputs {
     display: grid;
     grid-template-columns: auto;
+    justify-content: center;
   }
 
   .input {
     height: 40px;
     border: 3px solid black;
+    width: 270px
   }
 
   .btn {
     border: 3px solid black;
     border-radius: 0px;
     background-color: #BEE0DF;
+    width: 270px
   }
 
   .btn:hover {
