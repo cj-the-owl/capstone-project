@@ -70,4 +70,9 @@
     border-radius: 0px;
     background-color: #BEE0DF;
   }
+
+  .btn:hover {
+        color: #ffe280 !important;
+        font-weight: bolder;
+    }
 </style>

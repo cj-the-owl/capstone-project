@@ -39,9 +39,7 @@
     </div>
 
     <div class="position relative overflow-hidden" id="hero">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.293594955954!2d18.49008737515277!3d-33.98499182508532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc433bfcf832a1%3A0x3b4439b8cc517802!2s314%20Imam%20Haron%20Rd%2C%20Lansdowne%2C%20Cape%20Town%2C%207780!5e0!3m2!1sen!2sza!4v1694712479847!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </div>
 </template>
@@ -108,12 +106,9 @@
         background-color: #FFE280;
     }
 
-    #hero {
-        background-image: url(https://i.postimg.cc/qvxtCXhK/Screenshot-2023-09-04-140941.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+    iframe {
         height: 25rem;
-        background-position: center;
+        width: 100%;
     }
 
     .logo {

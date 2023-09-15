@@ -6,7 +6,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title" id="addUserModalLabel">Add User</h2>
-                        <button class="btn-close" type="button" aria-label="close"></button>
+                        <button class="btn-close" type="button" aria-label="close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
                         <input class="input m-2" type="text" placeholder="User Name" v-model="model.user.firstName">
@@ -76,6 +76,11 @@
         border-radius: 0px;
         background-color: #BEE0DF;
         color: black !important
+    }
+
+    .btn:hover {
+        color: #ffe280 !important;
+        font-weight: bolder;
     }
 
     .modal-body {

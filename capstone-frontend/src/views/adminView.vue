@@ -45,7 +45,7 @@
 
     <add-user/>
 
-    <table class="table-responsive-md table table-bordered">
+    <table class="table table-bordered" id="user-tab">
         <thead>
             <tr>
                 <th scope="col">User Id</th>
@@ -141,14 +141,15 @@
     }
 
     .user-img {
-        height: 100px;
+        height: 40px;
+        width: 40px;
     }
     .book-img {
         height: 150px;
     }
 
     th, tr, td{
-        background-color: #F9F0E9 !important;
+        background-color: #FFE280 !important;
     }
 
     #heading {
@@ -161,6 +162,20 @@
         background-color: #BEE0DF;
         color: black !important;
         margin-top: 5px;
+     }
+
+     .btn:hover {
+        color: #ffe280 !important;
+        font-weight: bolder;
+    }
+
+     #user-tab {
+        margin-left: -110px;
+        border: 3px solid black;
+     }
+
+     .table-responsive-md {
+        border: 3px solid black;
      }
 
 

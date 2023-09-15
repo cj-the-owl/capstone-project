@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cartModal">Cart</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cartModal" id="nav-link">Cart</button>
 
         <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledBy="cartModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -60,6 +60,22 @@
         background-color: #BEE0DF;
         color: black !important
     }
+
+    #but:hover, .btn-close:hover {
+        color: #FFE280 !important;
+        font-weight: bolder;
+    }
+
+    #nav-link {
+        border-radius: 0px;
+    }
+
+    #nav-link:hover {
+        border: 2px solid black;
+        background-color: #FFE280;
+        color: black !important;
+    }
+
 
     .modal-body {
         background-color: #F9F0E9;

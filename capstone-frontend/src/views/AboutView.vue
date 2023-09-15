@@ -1,15 +1,17 @@
 <template>
   <div>
+
+    <!-- add a photo of yourself!! -->
     <div class="p-5 m-5" id="heading">
       <h1 class="text-center">About Us</h1>
       <p class="text-center fs-5">Welcome to Bookworm.Co, your literary gateway to the world.Founded in 2023, Bookworm.Co emerged from a passion for the written word and a deep belief in the power of stories to enlighten, inspire, and transform. As a leading online bookstore, we've curated an expansive collection of titles across all genres, ensuring that every reader finds their next favorite book in our virtual aisles.</p>
     </div>
 
     <div class="about-section">
-      <img class="about-img" src="https://i.postimg.cc/fy7xTyqt/Book-aesthetic.jpg">
-      <img class="about-img" src="https://i.postimg.cc/N0Mq6r1t/download-6.jpg">
-      <img class="about-img" src="https://i.postimg.cc/qq29Jcds/Books-book-table-booktok-book-shopping-Waterstones-bookstore-shopping-romance-romcom-love.jpg">
-      <img class="about-img" src="https://i.postimg.cc/7LspZP1q/Mc-Nally-Jackson-Brooklyn.jpg">
+      <img class="about-img" src="https://i.postimg.cc/fy7xTyqt/Book-aesthetic.jpg" loading="lazy">
+      <img class="about-img" src="https://i.postimg.cc/N0Mq6r1t/download-6.jpg" loading="lazy">
+      <img class="about-img" src="https://i.postimg.cc/qq29Jcds/Books-book-table-booktok-book-shopping-Waterstones-bookstore-shopping-romance-romcom-love.jpg" loading="lazy">
+      <img class="about-img" src="https://i.postimg.cc/7LspZP1q/Mc-Nally-Jackson-Brooklyn.jpg" loading="lazy">
 
       <p class="text-center" id="about-info">Bookworm.Co began as a dream of Caryn Lodewyk, a passionate bibliophile who believed that every individual should have access to the vast universe of knowledge and imagination. Starting with just a few shelves of books, the store rapidly grew into a cornerstone of the Lansdowne community, thanks to the tireless dedication of our staff and the continuous support from our loyal customers.</p>
       <p class="text-center" id="about-info">With a curated selection of thousands of titles spanning from timeless classics to contemporary bestsellers, our shelves cater to all ages and interests. Whether you're searching for an old-time favorite, a niche genre, or the latest bestseller, chances are you'll find it nestled in our aisles. And if you don't, our knowledgeable staff is always on hand to assist or recommend the perfect read.</p>
@@ -22,7 +24,7 @@
     </div>
 
     <div class="founder-section">
-      <img class="founder-img" src="#">
+      <img class="founder-img" src="#" loading="lazy">
 
       <p class="text-center" id="founder-info">Caryn Lodewyk, the visionary behind "Bookworm.Co," was born with a fervent passion for stories. Hailing from the serene Welsh countryside and later studying Literature at Oxford, Caryn embarked on a worldwide journey, immersing herself in global tales and literary cultures. In 2022, she established "Bookworm.Co" in the heart of London. More than just a bookstore, it's a reflection of Caryn's travels and dedication to celebrating stories from all corners of the world. At the core of her ethos is the belief that every book bridges souls and cultures, a philosophy that "Bookworm.Co" cherishes to this day. Caryn's journey with books is a testament to her belief that literature is the bridge between souls, cultures, and epochs. And as you step into "Bookworm.Co," you don't just enter a store - you become part of Caryn's dream, her story, her legacy.</p>
     </div>

@@ -14,6 +14,7 @@ export default createStore({
     users: null,
     user: null || JSON.parse(localStorage.getItem('user')),
     userAuth: null,
+    userLoggedIn: false,
     jwToken: null,
     msg: null,
     asc: true,
@@ -40,6 +41,9 @@ export default createStore({
       state.user = user,
       state.userAuth = true,
       localStorage.setItem('user', JSON.stringify(user))
+    },
+    setUserLoggedIn(state, userLoggedIn) {
+      state.userLoggedIn = userLoggedIn
     },
     setToken (state, jwToken) {
       state.jwToken = jwToken

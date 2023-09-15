@@ -71,6 +71,11 @@ import spinnerComp from './spinnerComp.vue';
         width: 120px;
     }
 
+    .btn:hover {
+        color: #ffe280 !important;
+        font-weight: bolder;
+    }
+
     .price {
         margin-top: 17px;
     }

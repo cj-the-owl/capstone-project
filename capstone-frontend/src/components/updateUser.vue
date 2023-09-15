@@ -102,6 +102,11 @@
         color: black !important
     }
 
+    .btn:hover {
+        color: #ffe280 !important;
+        font-weight: bolder;
+    }
+
     .modal-body {
         background-color: #F9F0E9;
     }

@@ -41,6 +41,17 @@ const routes = [
     component: () => import('../views/loginView.vue')
   },
   {
+    path: '/logout',
+    name: 'logout',
+    beforeEnter() {
+      if (confirm("Are you sure you want to log out?")) {
+        localStorage.removeItem('setToken');
+        localStorage.removeItem('user');
+        router.push({name: 'login'});
+      }
+    }
+  },
+  {
     path: '/register',
     name: 'register',
     component: () => import('../views/registerView.vue')

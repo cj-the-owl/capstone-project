@@ -47,6 +47,15 @@ import cartComp from './cartComp.vue'
         color: black;
     }
 
+    .nav-link:hover {
+        border: 2px solid black;
+        background-color: #FFE280;
+    }
+    .nav-link:active {
+        border: 2px solid black;
+        background-color: #FFE280;
+    }
+
     .navbar-toggler {
         background-color: #FFE280;
         border: 3px solid black;

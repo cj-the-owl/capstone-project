@@ -35,7 +35,7 @@
         :product="product"
       >
         <!-- <router-link :to="{name: 'product', params:{id: product.prodID}}"> -->
-        <img class="book-img" :src="product.prodUrl" />
+        <img class="book-img" :src="product.prodUrl" loading="lazy">
         <div class="book-name">
           <h5>{{ product.prodName }}</h5>
           <!-- <p>{{ product.category }}</p> -->
@@ -143,6 +143,11 @@ export default {
   border: 3px solid black;
   border-radius: 0px;
   background-color: #bee0df;
+}
+
+.btn:hover {
+  color: #ffe280;
+  font-weight: bolder;
 }
 
 .sort-stuff {
