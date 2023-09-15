@@ -106,6 +106,7 @@ export default {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
+    align-items: center;
     gap: 100px;
   }
 
@@ -132,11 +133,11 @@ export default {
 
   #heading h1 {
     overflow: hidden;
-    width: 50%;
+    width: 45%;
     border-right: .10em solid rgb(255, 192, 75);
     white-space: nowrap; 
     margin: 0 auto; 
-    animation: typing 2.5s steps(30), blink .55s step-end infinite;
+    animation: typing 1.5s steps(50), blink .55s step-end infinite;
   }
   @keyframes typing {
   from { width: 0 } 

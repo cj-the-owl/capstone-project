@@ -78,4 +78,20 @@
         color: #ffe280 !important;
         font-weight: bolder;
     }
+
+    #heading h1 {
+    overflow: hidden;
+    width: 15%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(10), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
 </style>
