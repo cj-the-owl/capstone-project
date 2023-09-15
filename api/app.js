@@ -7,7 +7,6 @@ const cookieParser = require("cookie-parser")
 const { errorHandling } = require("./middleware/errorHandling")
 const route = require("./controller")
 
-app.use(express.static(__dirname + '/static'));
 
 app.use((req, res, next) => {
     res.header("Acess-Control-Allow-Origin", "*",)
