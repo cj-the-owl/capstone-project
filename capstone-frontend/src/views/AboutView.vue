@@ -19,7 +19,7 @@
       <p class="text-center" id="about-info">We pride ourselves on being more than just a business. We’re a part of this community. Through our literacy outreach programs, partnership with local schools, and support for budding authors, we strive to give back and foster a love for reading in every individual.</p>
     </div>
 
-    <div class="p-5 m-5" id="heading">
+    <div class="p-5 m-5" id="heading2">
       <h1 class="text-center">Meet The Founder</h1>
     </div>
 
@@ -40,7 +40,7 @@
 </script>
 
 <style scoped>
-  #heading {
+  #heading, #heading2 {
     background-color: #FFE280;
     border: 3px solid black;
   }
@@ -97,6 +97,21 @@
   #heading h1 {
     overflow: hidden;
     width: 15%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+  #heading2 h1 {
+    overflow: hidden;
+    width: 30%;
     border-right: .10em solid rgb(255, 192, 75);
     white-space: nowrap; 
     margin: 0 auto; 
