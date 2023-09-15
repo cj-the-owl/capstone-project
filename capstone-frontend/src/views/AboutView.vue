@@ -127,7 +127,7 @@
 
   /* media queries */
 
-  @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1400px) {
     .about-section {
     display: grid;
     grid-template-columns: auto auto;
@@ -226,6 +226,36 @@
     margin-bottom: 15px;
     margin-top: 15px;
   }
+  #heading h1 {
+    overflow: hidden;
+    width: 25%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+  #heading2 h1 {
+    overflow: hidden;
+    width: 50%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
   }
   @media screen and (max-width: 900px) {
     .about-section {
@@ -276,6 +306,37 @@
     margin-bottom: 15px;
     margin-top: 15px;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 30%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+  #heading2 h1 {
+    overflow: hidden;
+    width: 55%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
   }
   @media screen and (max-width: 800px) {
     .about-section {
@@ -326,6 +387,37 @@
     margin-bottom: 15px;
     margin-top: 15px;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 40%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+  #heading2 h1 {
+    overflow: hidden;
+    width: 80%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
   }
   @media screen and (max-width: 650px) {
     .about-section {
@@ -376,6 +468,37 @@
     margin-bottom: 15px;
     margin-top: 15px;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 40%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+  #heading2 h1 {
+    overflow: hidden;
+    width: 80%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
   }
   @media screen and (max-width: 600px) {
     .about-section {
@@ -426,6 +549,37 @@
     margin-bottom: 15px;
     margin-top: 15px;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 50%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+  #heading2 h1 {
+    overflow: hidden;
+    width: 90%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
   }
   @media screen and (max-width: 550px) {
     .about-section {
@@ -465,5 +619,71 @@
     margin-bottom: 15px;
     margin-top: 15px;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 80%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+  #heading2 h1 {
+    overflow: hidden;
+    width: 110%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+  
+  
+  }
+
+  @media screen and (max-width: 450px) {
+    #heading h1 {
+    overflow: hidden;
+    width: 80%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: wrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+  #heading2 h1 {
+    overflow: hidden;
+    width: 110%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: wrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
   }
 </style>
