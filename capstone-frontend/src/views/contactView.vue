@@ -22,13 +22,13 @@
             <div class="h-100 p-5 m-4 text-black rounded-3" id="form-side">
                 <form action="https://formspree.io/f/xdordeke" method="POST">
                     <div class="col-6 fs-5 pb-4">
-                        <input type="text" class="form-input" id="fullName" placeholder="Full Name Here" required oninvalid="this.setCustomValidity('Insert Name & Surname')">
+                        <input type="text" class="form-input" name="full name" id="fullName" placeholder="Full Name Here" required oninvalid="this.setCustomValidity('Insert Name & Surname')">
                     </div>
                     <div class="col-12 fs-5 pb-4">
-                        <input type="text" class="form-input" id="email" placeholder="Your Email Here" required oninvalid="this.setCustomValidity('Insert Email')">
+                        <input type="text" class="form-input" name="email" id="email" placeholder="Your Email Here" required oninvalid="this.setCustomValidity('Insert Email')">
                     </div>
                     <div class="col-12 fs-5 pb-4">
-                        <input type="text" class="form-input" id="message" placeholder="Your Message Here" required oninvalid="this.setCustomValidity('Insert a Message')">
+                        <input type="text" class="form-input" name="message" id="message" placeholder="Your Message Here" required oninvalid="this.setCustomValidity('Insert a Message')">
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn" id="form-btn">Submit Here</button>
@@ -139,7 +139,207 @@
 
     /* media queries */
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 850px) {
+        .row-align-items-md-stretch {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form-side {
+        width: 280px;
+        margin-left: 0px !important;
+    }
+
+    #fullName, #email, #message {
+        width: 11rem;
+    }
+
+    #form-btn {
+        width: 11rem;
+    }
+
+    #hero {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+
+    .logo {
+        width: 240px;
+    }
+
+  ul, p {
+    margin-left: 70px;
+  }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 40%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(20), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+}
+    @media screen and (max-width: 700px) {
+        .row-align-items-md-stretch {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form-side {
+        width: 350px;
+        margin-left: 120px !important;
+    }
+
+    #fullName, #email, #message {
+        width: 15rem;
+    }
+
+    #form-btn {
+        width: 15rem;
+    }
+
+    #hero {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+
+    .logo {
+        width: 240px;
+    }
+
+  ul, p {
+    margin-left: 70px;
+  }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 50%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(20), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+}
+    @media screen and (max-width: 600px) {
+        .row-align-items-md-stretch {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form-side {
+        width: 300px;
+        margin-left: 120px !important;
+    }
+
+    #fullName, #email, #message {
+        width: 12rem;
+    }
+
+    #form-btn {
+        width: 12rem;
+    }
+
+    #hero {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+
+    .logo {
+        width: 240px;
+    }
+
+  ul, p {
+    margin-left: 70px;
+  }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 60%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(20), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+}
+    @media screen and (max-width: 500px) {
+        .row-align-items-md-stretch {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form-side {
+        width: 300px;
+        margin-left: 90px !important;
+    }
+
+    #fullName, #email, #message {
+        width: 12rem;
+    }
+
+    #form-btn {
+        width: 12rem;
+    }
+
+    #hero {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+
+    .logo {
+        width: 240px;
+    }
+
+  ul, p {
+    margin-left: 70px;
+  }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 70%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(20), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+}
+    @media screen and (max-width: 450px) {
         .row-align-items-md-stretch {
         display: grid;
         grid-template-columns: auto;
@@ -172,6 +372,24 @@
   ul, p {
     margin-left: 70px;
   }
+
+  
+
+  #heading h1 {
+    overflow: hidden;
+    width: 85%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
     }
     @media screen and (max-width: 350px) {
         .row-align-items-md-stretch {
@@ -206,6 +424,22 @@
   ul, p {
     margin-left: 65px;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 110%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: wrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
     }
     @media screen and (max-width: 300px) {
         .row-align-items-md-stretch {
@@ -240,6 +474,22 @@
   ul, p {
     margin-left: 60px;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 110%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: wrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
     }
 
     /* #heading h1 {
