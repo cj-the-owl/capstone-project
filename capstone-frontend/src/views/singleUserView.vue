@@ -189,4 +189,15 @@
         color: black !important;
         text-decoration: none !important;
     }
+
+    /* media queries */
+
+    @media screen and (max-width: 430px) {
+        .buttons {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 30px;
+        }
+    }
 </style>

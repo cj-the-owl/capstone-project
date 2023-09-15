@@ -67,7 +67,7 @@ export default {
         align-items: center;
         justify-content: center;
         /* border: 3px solid black; */
-        width: 500px;
+        width: 400px;
         margin-top: 30px;
     }
 
@@ -94,5 +94,18 @@ export default {
     .nav-link:hover {
         color: #FFE280;
         font-weight: bolder;
+    }
+
+    /* media queries  */
+
+    @media screen and (max-width: 450px) {
+        .form-input, .btn {
+            width: 250px;
+        }
+
+        .nav-link {
+            font-size: 12px;
+        }
+
     }
 </style>
