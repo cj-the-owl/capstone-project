@@ -225,6 +225,22 @@ export default {
     inline-size: 300px;
     overflow-wrap: break-word;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 25%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
 }
 @media screen and (max-width: 1000px) {
   #prods {
@@ -251,6 +267,22 @@ export default {
     inline-size: 250px;
     overflow-wrap: break-word;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 30%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
 }
 @media screen and (max-width: 850px) {
   #prods {
@@ -277,6 +309,22 @@ export default {
     inline-size: 200px;
     overflow-wrap: break-word;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 35%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
 }
 @media screen and (max-width: 650px) {
   #prods {
@@ -341,6 +389,22 @@ export default {
     grid-template-columns: auto;
     gap: 5px;
 }
+
+#heading h1 {
+    overflow: hidden;
+    width: 40%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
 }
 @media screen and (max-width: 650px) {
   #prods {
@@ -372,6 +436,22 @@ export default {
     display: grid;
     grid-template-columns: auto;
     gap: 5px;
+}
+
+#heading h1 {
+    overflow: hidden;
+    width: 50%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
 }
 }
 @media screen and (max-width: 550px) {
@@ -405,6 +485,22 @@ export default {
     grid-template-columns: auto;
     gap: 5px;
 }
+
+#heading h1 {
+    overflow: hidden;
+    width: 55%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
 }
 @media screen and (max-width: 500px) {
   #prods {
@@ -436,6 +532,22 @@ export default {
     display: grid;
     grid-template-columns: auto;
     gap: 5px;
+}
+
+#heading h1 {
+    overflow: hidden;
+    width: 80%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
 }
 }
 @media screen and (max-width: 400px) {
@@ -470,6 +582,27 @@ export default {
     gap: 5px;
 }
 
+#heading h1 {
+    overflow: hidden;
+    width: 60%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: wrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+}
+@media screen and (max-width: 330px) {
+  select, input, .btn {
+    width: 130px;
+  }
+
 /* select, input {
     width: 100px;
   } */
@@ -484,6 +617,22 @@ export default {
   select, input, .btn {
     width: 150px;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 60%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: wrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
 }
 @media screen and (max-width: 330px) {
   select, input, .btn {
@@ -494,5 +643,21 @@ export default {
   select, input, .btn {
     width: 100px;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 80%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: wrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
 }
 </style>
