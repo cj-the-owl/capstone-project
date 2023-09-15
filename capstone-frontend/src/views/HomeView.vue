@@ -149,10 +149,11 @@ export default {
 
   /*media queries*/
 
-  @media screen and (max-width: 1360px) {
-    #heading h1 {
+   @media screen and (max-width: 1360px) {
+   
+    /* #heading h1 {
       white-space: wrap;
-    }
+    } */
   }
 
   @media screen and (max-width: 1130px) {
@@ -212,6 +213,22 @@ export default {
     height: 250px; 
   }
 
+  #heading h1 {
+    overflow: hidden;
+    width: 100%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(30), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+
   }
   @media screen and (max-width: 650px) {
     .row {
@@ -226,6 +243,23 @@ export default {
     height: 300px;
     
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 80%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: wrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(15), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
+  
   }
   @media screen and (max-width: 500px) {
     .row {
@@ -245,6 +279,22 @@ export default {
     font-weight: bolder;
     font-size: 40px
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 100%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: wrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(40), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
   }
   @media screen and (max-width: 400px) {
     .row {
@@ -269,5 +319,21 @@ export default {
   .mt-3 {
     display: grid;
   }
+
+  #heading h1 {
+    overflow: hidden;
+    width: 110%;
+    border-right: .10em solid rgb(255, 192, 75);
+    white-space: wrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(50), blink .55s step-end infinite;
+  }
+  @keyframes typing {
+  from { width: 0 } 
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 192, 75); }
+}
   }
 </style>
