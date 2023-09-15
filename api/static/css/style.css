@@ -1,0 +1,42 @@
+body {
+    background-color: #F9F0E9 !important;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #head {
+    background-color: #BEE0DF !important;
+    border: 3px solid black;
+  }
+
+  #heading {
+    border: 3px solid black;
+    background-color: #FFE280 !important;
+  }
+
+  .table {
+    border: 3px solid black !important;
+  }
+
+  th {
+    background-color: #BEE0DF !important;
+  }
+
+  td {
+    background-color: #FFE280 !important;
+  }
+
+  /* media queries */
+
+  @media screen and (max-width: 900px) {
+    #head, #heading {
+        width: 850px;
+    }
+
+    #users, #books {
+        width: 922.24px;
+    }
+  }
